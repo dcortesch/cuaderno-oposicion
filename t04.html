@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>T04 · Números enteros, divisibilidad y congruencias · Cuaderno de Oposición</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+<script>
+  window.MathJax = { tex: { inlineMath: [['$','$']], displayMath: [['$$','$$']] } };
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/3.2.2/es5/tex-mml-chtml.min.js" async></script>
+</head>
+<body>
+
+<div class="shell">
+  <aside class="index-rail">
+    <a href="../index.html" class="brand">
+      <span class="mark">Cuaderno&nbsp;de&nbsp;Oposición</span>
+      <span class="sub">Matemáticas · Secundaria · Andalucía</span>
+    </a>
+    <div class="meta-line">
+      <span>Bloque: <b>Temas</b></span>
+      <span>Mes 01 · Semana 1</span>
+      <span>Estado: <b>Elaborado — sin evidencia de dominio</b></span>
+    </div>
+    <nav class="months">
+      <a href="../index.html#mes-01" class="month-link active"><span class="num">01</span><span class="name">Mes 01</span><span class="count">1/5</span></a>
+      <a href="../index.html#mes-02" class="month-link is-empty"><span class="num">02</span><span class="name">Mes 02</span><span class="count">0/5</span></a>
+      <a href="../index.html#mes-03" class="month-link is-empty"><span class="num">03</span><span class="name">Mes 03</span><span class="count">0/5</span></a>
+      <a href="../index.html#mes-04" class="month-link is-empty"><span class="num">04</span><span class="name">Mes 04</span><span class="count">0/5</span></a>
+      <a href="../index.html#transversal" class="month-link"><span class="num">90</span><span class="name">Banco transversal</span><span class="count">—</span></a>
+      <a href="../index.html#maestros" class="month-link"><span class="num">00</span><span class="name">Documentos maestros</span><span class="count">—</span></a>
+    </nav>
+    <div class="rail-footer">
+      Página generada desde el documento de estudio real en Drive (T4_01_Tema_estudio).
+    </div>
+  </aside>
+
+  <main>
+    <header class="topic-header">
+      <div class="breadcrumb"><a href="../index.html">Cuaderno</a> / <a href="../index.html#mes-01">Mes 01</a> / T04</div>
+      <h1>Números enteros. Divisibilidad. Números primos. Congruencia.</h1>
+      <p class="lede" style="max-width:56ch; color:#3d3a34;">Capa de estudio: desarrollo amplio, demostraciones y transferencia a problemas. No pensada para reproducirse íntegra en examen — para eso están las versiones esencial y completa.</p>
+      <div class="topic-tag-row">
+        <span class="topic-tag mono">Mes 1 · Semana 1</span>
+        <span class="topic-tag mono">28 problemas asociados</span>
+        <span class="topic-tag mono">A · imprescindible · B · alto valor · C · ampliación</span>
+      </div>
+    </header>
+
+    <article class="topic-body">
+
+      <h2>1 · Introducción funcional</h2>
+      <p>Los números enteros constituyen el primer sistema numérico en el que la resta es una operación interna y permiten formular con precisión dos preguntas elementales: cuándo una cantidad divide a otra y qué información se conserva al considerar únicamente los restos. De esas preguntas nacen la divisibilidad, la teoría de números primos y las congruencias, que convierten problemas sobre enteros potencialmente ilimitados en problemas estructurados mediante factores o clases residuales.</p>
+      <p>La unidad del tema no es solo formal. En los libros VII y IX de los <em>Elementos</em>, Euclides sistematizó el algoritmo del máximo común divisor y probó que existen infinitos primos. Esa tradición alcanza una formulación moderna con Gauss, cuya notación de congruencias hace posible operar con restos como objetos matemáticos.</p>
+      <p>El tema fundamenta algoritmos, criterios de divisibilidad, ecuaciones diofánticas y criptografía, y proporciona en ESO y Bachillerato un marco privilegiado para desarrollar razonamiento, demostración y sentido numérico.</p>
+
+      <h2>2 · Los números enteros</h2>
+      <h3>2.1 Estructura algebraica y orden</h3>
+      <p>El conjunto $\mathbb{Z} = \{\dots,-2,-1,0,1,2,\dots\}$, con la suma y el producto usuales, es un dominio de integridad: anillo conmutativo con unidad, no trivial y sin divisores de cero. Sus unidades son $1$ y $-1$. La relación de orden es total y compatible con las operaciones:</p>
+      <p>$$a \le b \Rightarrow a+c \le b+c, \qquad 0\le a,\ 0\le b \Rightarrow 0 \le ab.$$</p>
+
+      <div class="priority-c">
+        <span class="priority-label c">Ampliación C</span>
+        <p>Puede construirse $\mathbb{Z}$ a partir de $\mathbb{N}\times\mathbb{N}$ mediante $(a,b)\sim(c,d) \Leftrightarrow a+d=b+c$. La clase de $(a,b)$ representa la diferencia $a-b$. Aclara por qué los enteros completan a los naturales respecto de la resta, aunque no es necesaria para los resultados posteriores.</p>
+      </div>
+
+      <h2>3 · División euclídea y divisibilidad</h2>
+      <h3>3.1 Teorema de la división euclídea</h3>
+      <div class="theorem-box">
+        <span class="t-label">Teorema 3.1</span>
+        <p style="margin:0;">Dados $a\in\mathbb{Z}$ y $b\in\mathbb{Z}\setminus\{0\}$, existen únicos $q,r\in\mathbb{Z}$ tales que $a=bq+r$, $0\le r<|b|$.</p>
+      </div>
+      <p>La demostración se apoya en el buen orden de $\mathbb{N}$: el conjunto $S=\{a-bk : k\in\mathbb{Z},\, a-bk\ge 0\}$ tiene mínimo $r=a-bq$; si $r\ge b$ se contradice la minimalidad. La unicidad sale de que $|r'-r|<b$ obliga a que el único múltiplo de $b$ posible sea $0$.</p>
+
+      <div class="example-box">
+        <span class="e-label">Ejemplo 3.2</span>
+        <p style="margin:0;">$-47 = 6(-8)+1$. El resto euclídeo es $1$, no $-5$, porque se exige $0\le r<6$.</p>
+      </div>
+
+      <h3>3.2 Relación de divisibilidad</h3>
+      <p>Para $a,b\in\mathbb{Z}$, $a\mid b$ si existe $k\in\mathbb{Z}$ tal que $b=ak$. Si $a\mid b$ y $a\mid c$, entonces $a\mid(ub+vc)$ para cualesquiera $u,v\in\mathbb{Z}$. El cero exige atención: todo entero divide a $0$, pero $0$ solo divide a $0$.</p>
+      <div class="example-box">
+        <span class="e-label">Contraejemplo de cancelación</span>
+        <p style="margin:0;">De $ac\mid bc$ no se sigue siempre $a\mid b$ si $c=0$. Las hipótesis importan también en congruencias: $2\cdot1 \equiv 2\cdot4 \pmod 6$, pero $1\not\equiv 4 \pmod 6$.</p>
+      </div>
+
+      <h2>4 · Máximo común divisor y algoritmo de Euclides</h2>
+      <p>Para $a,b$ no ambos nulos, $d=\mathrm{mcd}(a,b)$ es el entero positivo que divide a ambos y es múltiplo de todo divisor común. Para $a,b\ne0$: $\mathrm{mcd}(a,b)\cdot\mathrm{mcm}(a,b)=|ab|$.</p>
+      <div class="theorem-box">
+        <span class="t-label">Lema 4.2</span>
+        <p style="margin:0;">Si $a=bq+r$, entonces $\mathrm{mcd}(a,b)=\mathrm{mcd}(b,r)$.</p>
+      </div>
+      <p>Al reiterar el lema se obtiene el algoritmo de Euclides. Para $252$ y $198$:</p>
+      <p>$$252=198+54,\quad 198=3\cdot54+36,\quad 54=36+18,\quad 36=2\cdot18$$</p>
+      <p>de modo que $\mathrm{mcd}(252,198)=18$.</p>
+      <div class="theorem-box">
+        <span class="t-label">Teorema 4.3 · Identidad de Bézout</span>
+        <p style="margin:0;">Si $d=\mathrm{mcd}(a,b)$, existen $u,v\in\mathbb{Z}$ tales que $d=au+bv$. Además $\{au+bv : u,v\in\mathbb{Z}\}=d\mathbb{Z}$.</p>
+      </div>
+      <p>En el ejemplo anterior: $18 = 54-36 = 54-(198-3\cdot54) = 4\cdot54-198 = 4\cdot252-5\cdot198$.</p>
+      <div class="priority-a">
+        <span class="priority-label a">Prioridad A</span>
+        <p style="margin:0;">Corolario 4.4 — La ecuación diofántica $ax+by=c$ tiene solución entera si y solo si $\mathrm{mcd}(a,b)\mid c$. Base directa de los problemas de reparto con restos.</p>
+      </div>
+
+      <h2>5 · Números primos y factorización</h2>
+      <p>Un entero $p>1$ es primo si sus únicos divisores positivos son $1$ y $p$. Los números $0$ y $1$ no son primos.</p>
+      <div class="theorem-box">
+        <span class="t-label">Lema de Euclides</span>
+        <p style="margin:0;">Si $p$ es primo y $p\mid ab$, entonces $p\mid a$ o $p\mid b$. Se demuestra vía Bézout: si $p\nmid a$, existen $u,v$ con $up+va=1$; al multiplicar por $b$ se obtiene $p\mid b$.</p>
+      </div>
+      <div class="theorem-box">
+        <span class="t-label">Teorema fundamental de la aritmética</span>
+        <p style="margin:0;">Todo entero $n>1$ se expresa como producto de primos, de forma única salvo el orden.</p>
+      </div>
+      <div class="theorem-box">
+        <span class="t-label">Infinitud de los primos</span>
+        <p style="margin:0;">Si $p_1,\dots,p_k$ fueran todos, $N=p_1\cdots p_k+1$ no sería divisible por ninguno, pero posee un divisor primo — contradicción.</p>
+      </div>
+      <div class="priority-c">
+        <span class="priority-label c">Ampliación C · Funciones aritméticas</span>
+        <p style="margin:0;">$f:\mathbb{N}\to\mathbb{C}$ es multiplicativa si $f(mn)=f(m)f(n)$ cuando $\mathrm{mcd}(m,n)=1$. Son multiplicativas $\tau$, $\sigma$ y la función de Euler $\varphi$.</p>
+      </div>
+
+      <h2>6 · Congruencias y aritmética modular</h2>
+      <h3>6.1 Definición y estructura cociente</h3>
+      <p>$a\equiv b \pmod m \Leftrightarrow m\mid(a-b)$. Es relación de equivalencia compatible con suma y producto. $\mathbb{Z}/m\mathbb{Z}$ es un anillo cociente; la clase $a$ es invertible si y solo si $\mathrm{mcd}(a,m)=1$.</p>
+      <div class="example-box">
+        <span class="e-label">Ejemplo 6.3</span>
+        <p style="margin:0;">$14x\equiv8\pmod{20}$ equivale, al dividir por $2$, a $7x\equiv4\pmod{10}$. Como $7^{-1}\equiv3\pmod{10}$, resulta $x\equiv2\pmod{10}$; módulo $20$ hay dos clases solución: $2$ y $12$.</p>
+      </div>
+
+      <h3>6.2 Congruencias lineales</h3>
+      <div class="theorem-box">
+        <span class="t-label">Teorema 6.4</span>
+        <p style="margin:0;">$ax\equiv b\pmod m$ tiene solución si y solo si $d=\mathrm{mcd}(a,m)$ divide a $b$. En tal caso tiene exactamente $d$ soluciones incongruentes módulo $m$.</p>
+      </div>
+
+      <h3>6.3 Pequeños teoremas de Fermat y Euler</h3>
+      <div class="theorem-box">
+        <span class="t-label">Teorema de Euler</span>
+        <p style="margin:0;">Si $\mathrm{mcd}(a,m)=1$, entonces $a^{\varphi(m)}\equiv1\pmod m$.</p>
+      </div>
+      <div class="theorem-box">
+        <span class="t-label">Corolario · Fermat</span>
+        <p style="margin:0;">Si $p$ es primo y $p\nmid a$: $a^{p-1}\equiv1\pmod p$. Para todo $a$: $a^p\equiv a\pmod p$.</p>
+      </div>
+      <div class="theorem-box">
+        <span class="t-label">Teorema de Wilson</span>
+        <p style="margin:0;">$p>1$ es primo si y solo si $(p-1)!\equiv-1\pmod p$.</p>
+      </div>
+
+      <h3>6.4 Teorema chino del resto</h3>
+      <div class="theorem-box">
+        <span class="t-label">Teorema 6.8 · TCR</span>
+        <p style="margin:0;">Si $m_1,\dots,m_r$ son coprimos dos a dos, el sistema $x\equiv a_i\pmod{m_i}$ tiene solución única módulo $M=m_1\cdots m_r$.</p>
+      </div>
+      <div class="example-box">
+        <span class="e-label">Ejemplo 6.9</span>
+        <p style="margin:0;">Resolver $x\equiv2\pmod3$, $x\equiv3\pmod5$, $x\equiv2\pmod7$. Se obtiene $x\equiv23\pmod{105}$.</p>
+      </div>
+
+      <h2>7 · Aplicaciones y transferencia a problemas</h2>
+      <h3>7.1 Criterios, cifras y ciclos</h3>
+      <p>Si $N=\sum a_k10^k$, como $10\equiv1\pmod9$, se obtiene el criterio de divisibilidad entre $9$; como $10\equiv-1\pmod{11}$, aparece la suma alternada. Las últimas cifras y los exponentes grandes se reducen mediante ciclos o el teorema de Euler.</p>
+
+      <h3>7.2 RSA como aplicación modular</h3>
+      <p>Se eligen primos grandes $p,q$ y $n=pq$. Si $ed\equiv1\pmod{\varphi(n)}$, el cifrado $c\equiv m^e\pmod n$ se descifra con $c^d\equiv m\pmod n$. La justificación combina Euler y el TCR; la seguridad práctica depende de la dificultad de factorizar $n$, no del secreto del algoritmo.</p>
+
+      <h3>7.3 Mapa de reconocimiento</h3>
+      <table class="map-table">
+        <thead><tr><th>Señal del enunciado</th><th>Herramienta</th><th>Control</th></tr></thead>
+        <tbody>
+          <tr><td>Resto, última cifra, potencia enorme</td><td>Congruencias y ciclos</td><td>Reducir bases antes que exponentes</td></tr>
+          <tr><td>Divisibilidad universal</td><td>Factorización o módulos primos</td><td>Separar el módulo en factores coprimos</td></tr>
+          <tr><td>$ax+by=c$ o reparto con restos</td><td>Bézout / TCR</td><td>Comprobar condición del m.c.d.</td></tr>
+          <tr><td>Número de divisores</td><td>Factorización y $\tau$</td><td>Traducir restricciones a exponentes</td></tr>
+          <tr><td>Producto siempre múltiplo de $m$</td><td>Clases residuales / palomar</td><td>Probar cada potencia prima de $m$</td></tr>
+        </tbody>
+      </table>
+
+      <h2>8 · Proyección curricular y didáctica</h2>
+      <p>La aritmética escolar no debe reducirse a reglas mecánicas. Conviene partir de problemas de reparto, periodicidad y codificación; hacer explícitas las propiedades que legitiman cada algoritmo; y alternar ejemplos con contraejemplos. Tres obstáculos frecuentes son confundir divisor con cociente, cancelar factores no invertibles en una congruencia y usar un teorema sin comprobar coprimalidad.</p>
+      <p>Una progresión eficaz: exploración de regularidades, formulación de conjeturas, representación mediante divisores o clases, demostración, y transferencia a una situación distinta. El sentido numérico se construye cuando el alumnado decide estrategias, estima y justifica — no cuando reproduce exclusivamente algoritmos.</p>
+      <p>En Andalucía, el contenido se conecta con el sentido numérico, el razonamiento y la resolución de problemas de las órdenes de 30 de mayo de 2023 para ESO y Bachillerato.</p>
+
+      <h2>9 · Conexiones con otros temas</h2>
+      <ul class="conn-list">
+        <li><b>T1–T3</b> Sistemas de numeración, naturales y racionales; los criterios de divisibilidad nacen de la representación posicional.</li>
+        <li><b>T8, T15</b> Recurrencias módulo $m$ y ecuaciones diofánticas.</li>
+        <li><b>T11–T19</b> Anillos cociente, polinomios y álgebra lineal; un determinante puede estudiarse módulo $m$.</li>
+        <li><b>T37–T54</b> Ternas pitagóricas y restricciones modulares en geometría entera.</li>
+        <li><b>T63–T66</b> Conteo y probabilidad sobre clases de residuos.</li>
+      </ul>
+
+      <h2>10 · Conclusión</h2>
+      <p>La división euclídea proporciona el principio algorítmico; Bézout traduce el máximo común divisor en combinación lineal; la factorización prima describe la estructura multiplicativa; y las congruencias permiten trabajar con información residual sin perder compatibilidad algebraica. En el aula, su valor reside además en que hace visibles las hipótesis, favorece la búsqueda de invariantes y permite pasar de la experimentación a la demostración.</p>
+
+      <h2>Bibliografía utilizada</h2>
+      <ul class="biblio-list">
+        <li>Boyer, C. B. y Merzbach, U. C. (1999). <em>Historia de la matemática</em>. Alianza Editorial.</li>
+        <li>Hunacek, M. (2023). <em>Introduction to Number Theory</em>. Chapman &amp; Hall/CRC.</li>
+        <li>Ivorra Castillo, C. <em>Introducción a la teoría algebraica de números</em>. Universitat de València.</li>
+        <li>Goñi, J. M. et al. (2011). <em>Matemáticas. Complementos de formación disciplinar</em>. Graó.</li>
+        <li>Apostol, T. M. (1984). <em>Introducción a la teoría analítica de números</em>. Reverté.</li>
+      </ul>
+
+      <h2>Normativa de referencia</h2>
+      <ul class="biblio-list">
+        <li>Orden de 30 de mayo de 2023, currículo de ESO en Andalucía.</li>
+        <li>Orden de 30 de mayo de 2023, currículo de Bachillerato en Andalucía.</li>
+      </ul>
+
+    </article>
+
+    <nav class="topic-footer-nav">
+      <a href="../index.html#mes-01">← Volver a Mes 01</a>
+      <a href="../index.html#transversal">Banco de problemas del T04 →</a>
+    </nav>
+  </main>
+</div>
+
+</body>
+</html>
