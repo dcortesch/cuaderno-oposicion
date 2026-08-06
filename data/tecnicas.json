@@ -1,0 +1,533 @@
+{
+  "meta": {
+    "tema": "T04",
+    "fuente": "T04.P03",
+    "fecha": "2026-08-06"
+  },
+  "tecnicas": [
+    {
+      "id": "T01",
+      "bloque": "Diagnóstico",
+      "tecnica": "Reconocimiento de estructura",
+      "nivel": "A",
+      "senales": "Divisibilidad, resto, existencia, clasificación o proceso",
+      "hipotesis": "Dominio y cuantificadores",
+      "procedimiento": "Traducir; factorizar; comprobar hipótesis; elegir ruta",
+      "problemas": [
+        "P2",
+        "P8",
+        "P10",
+        "P12",
+        "P15",
+        "P20",
+        "P24",
+        "P25"
+      ],
+      "capitulos": "1",
+      "ficha": "1",
+      "videos": [
+        "V09"
+      ],
+      "repaso": "24 h",
+      "estado": "Activo"
+    },
+    {
+      "id": "T02",
+      "bloque": "Divisibilidad",
+      "tecnica": "Algoritmo de Euclides",
+      "nivel": "A",
+      "senales": "MCD, restos sucesivos, divisibilidad",
+      "hipotesis": "Divisor no nulo",
+      "procedimiento": "Divisiones hasta resto 0; último resto no nulo",
+      "problemas": [
+        "P20"
+      ],
+      "capitulos": "2",
+      "ficha": "2",
+      "videos": [
+        "V14"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T03",
+      "bloque": "Divisibilidad",
+      "tecnica": "Bézout e inversos",
+      "nivel": "A",
+      "senales": "Combinación lineal, inverso modular",
+      "hipotesis": "MCD y coprimalidad",
+      "procedimiento": "Euclides extendido; sustitución; comprobación",
+      "problemas": [
+        "P8",
+        "P12",
+        "P20",
+        "P24"
+      ],
+      "capitulos": "2,5",
+      "ficha": "2,5",
+      "videos": [
+        "V01"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T04",
+      "bloque": "Diofánticas",
+      "tecnica": "Ecuación lineal",
+      "nivel": "A",
+      "senales": "Soluciones enteras, reparto, monedas",
+      "hipotesis": "mcd(a,b) divide c",
+      "procedimiento": "Particular; parametrización; filtrar cotas",
+      "problemas": [
+        "P24"
+      ],
+      "capitulos": "2,14",
+      "ficha": "2",
+      "videos": [
+        "V03"
+      ],
+      "repaso": "30 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T05",
+      "bloque": "Factorización",
+      "tecnica": "Valoraciones p-ádicas",
+      "nivel": "A",
+      "senales": "Potencias primas, factoriales, divisibilidad fuerte",
+      "hipotesis": "p primo",
+      "procedimiento": "Factorizar módulo; comparar exponentes",
+      "problemas": [
+        "P12",
+        "P20",
+        "P25"
+      ],
+      "capitulos": "3,9",
+      "ficha": "3",
+      "videos": [
+        "V08"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T06",
+      "bloque": "Factorización",
+      "tecnica": "Fórmula de Legendre",
+      "nivel": "B",
+      "senales": "Exponente de p en n!, ceros finales",
+      "hipotesis": "p primo",
+      "procedimiento": "Sumar pisos n/p^k",
+      "problemas": [
+        "Transferencia"
+      ],
+      "capitulos": "3,22",
+      "ficha": "3",
+      "videos": [
+        "V08",
+        "V15"
+      ],
+      "repaso": "30 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T07",
+      "bloque": "Congruencias",
+      "tecnica": "Cálculo modular básico",
+      "nivel": "A",
+      "senales": "Restos, polinomios, tablas pequeñas",
+      "hipotesis": "m>=2",
+      "procedimiento": "Reducir; operar; cerrar con representante",
+      "problemas": [
+        "P2",
+        "P8",
+        "P10",
+        "P12",
+        "P25"
+      ],
+      "capitulos": "4",
+      "ficha": "4",
+      "videos": [
+        "V02"
+      ],
+      "repaso": "24 h",
+      "estado": "Activo"
+    },
+    {
+      "id": "T08",
+      "bloque": "Congruencias",
+      "tecnica": "Cancelación segura",
+      "nivel": "A",
+      "senales": "División aparente en congruencias",
+      "hipotesis": "d=mcd(c,m)",
+      "procedimiento": "Reducir módulo a m/d; conservar m solo si d=1",
+      "problemas": [
+        "P8",
+        "P12",
+        "P24"
+      ],
+      "capitulos": "4",
+      "ficha": "4",
+      "videos": [
+        "V02"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T09",
+      "bloque": "Congruencias",
+      "tecnica": "Congruencias lineales",
+      "nivel": "A",
+      "senales": "ax=b mod m",
+      "hipotesis": "d=mcd(a,m) divide b",
+      "procedimiento": "Dividir por d; invertir; listar d clases",
+      "problemas": [
+        "P24"
+      ],
+      "capitulos": "5",
+      "ficha": "5",
+      "videos": [
+        "V02",
+        "V01"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T10",
+      "bloque": "Potencias",
+      "tecnica": "Orden multiplicativo",
+      "nivel": "B",
+      "senales": "Potencias grandes con base coprima",
+      "hipotesis": "mcd(a,m)=1",
+      "procedimiento": "Buscar orden entre divisores de phi(m)",
+      "problemas": [
+        "P8",
+        "P12"
+      ],
+      "capitulos": "6",
+      "ficha": "6",
+      "videos": [
+        "V04",
+        "V13"
+      ],
+      "repaso": "30 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T11",
+      "bloque": "Potencias",
+      "tecnica": "Últimas cifras",
+      "nivel": "A",
+      "senales": "Última o dos últimas cifras",
+      "hipotesis": "Módulo 10^k",
+      "procedimiento": "Ciclo directo; separar 4 y 25 si conviene",
+      "problemas": [
+        "P8"
+      ],
+      "capitulos": "6",
+      "ficha": "6",
+      "videos": [
+        "V13"
+      ],
+      "repaso": "24 h",
+      "estado": "Activo"
+    },
+    {
+      "id": "T12",
+      "bloque": "Potencias",
+      "tecnica": "Fermat y Euler",
+      "nivel": "A",
+      "senales": "Exponente grande, módulo primo o compuesto",
+      "hipotesis": "Primalidad/coprimalidad",
+      "procedimiento": "Separar caso no invertible; reducir exponente",
+      "problemas": [
+        "P2",
+        "P8",
+        "P12"
+      ],
+      "capitulos": "7",
+      "ficha": "7",
+      "videos": [
+        "V04",
+        "V07"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T13",
+      "bloque": "Potencias",
+      "tecnica": "Wilson",
+      "nivel": "C",
+      "senales": "Factorial (p-1)! módulo p",
+      "hipotesis": "p primo",
+      "procedimiento": "Emparejar inversos",
+      "problemas": [
+        "Transferencia"
+      ],
+      "capitulos": "7",
+      "ficha": "7",
+      "videos": [
+        "V04"
+      ],
+      "repaso": "60-90 d",
+      "estado": "Ampliación"
+    },
+    {
+      "id": "T14",
+      "bloque": "TCR",
+      "tecnica": "Módulos coprimos",
+      "nivel": "A",
+      "senales": "Sistema de restos",
+      "hipotesis": "Coprimos dos a dos",
+      "procedimiento": "Sustitución o fórmula constructiva",
+      "problemas": [
+        "P8",
+        "P12"
+      ],
+      "capitulos": "8",
+      "ficha": "8",
+      "videos": [
+        "V05"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T15",
+      "bloque": "TCR",
+      "tecnica": "Módulos no coprimos",
+      "nivel": "B",
+      "senales": "Sistema con módulos compartidos",
+      "hipotesis": "a=b mod mcd(m,n)",
+      "procedimiento": "Comprobar compatibilidad; módulo final mcm",
+      "problemas": [
+        "Transferencia"
+      ],
+      "capitulos": "8",
+      "ficha": "8",
+      "videos": [
+        "V06"
+      ],
+      "repaso": "30 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T16",
+      "bloque": "Funciones",
+      "tecnica": "Número de divisores tau",
+      "nivel": "A",
+      "senales": "Cantidad de divisores",
+      "hipotesis": "Factorización completa",
+      "procedimiento": "Producto de exponentes+1",
+      "problemas": [
+        "P15"
+      ],
+      "capitulos": "10",
+      "ficha": "9",
+      "videos": [
+        "V10"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T17",
+      "bloque": "Funciones",
+      "tecnica": "Suma de divisores sigma",
+      "nivel": "A",
+      "senales": "Suma de divisores",
+      "hipotesis": "Factorización completa",
+      "procedimiento": "Producto de sumas geométricas",
+      "problemas": [
+        "P15"
+      ],
+      "capitulos": "10",
+      "ficha": "9",
+      "videos": [
+        "V10",
+        "V11"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T18",
+      "bloque": "Funciones",
+      "tecnica": "Phi de Euler",
+      "nivel": "B",
+      "senales": "Coprimos menores, Euler",
+      "hipotesis": "Factorización completa",
+      "procedimiento": "n producto (1-1/p)",
+      "problemas": [
+        "P8",
+        "P12",
+        "P15"
+      ],
+      "capitulos": "7,10",
+      "ficha": "7,9",
+      "videos": [
+        "V07"
+      ],
+      "repaso": "30 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T19",
+      "bloque": "Numeración",
+      "tecnica": "Criterios por la base",
+      "nivel": "B",
+      "senales": "Cifras, bases, repunidades",
+      "hipotesis": "Base posicional",
+      "procedimiento": "Evaluar polinomio y reducir base",
+      "problemas": [
+        "Transferencia"
+      ],
+      "capitulos": "11",
+      "ficha": "—",
+      "videos": [],
+      "repaso": "60-90 d",
+      "estado": "Complementario"
+    },
+    {
+      "id": "T20",
+      "bloque": "Existencia",
+      "tecnica": "Principio del palomar",
+      "nivel": "A",
+      "senales": "Más objetos que clases, diferencias divisibles",
+      "hipotesis": "Conteo finito",
+      "procedimiento": "Definir objetos y cajas; traducir coincidencia",
+      "problemas": [
+        "P10"
+      ],
+      "capitulos": "12",
+      "ficha": "10",
+      "videos": [
+        "V09"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T21",
+      "bloque": "Recurrencias",
+      "tecnica": "Estados finitos módulo m",
+      "nivel": "B",
+      "senales": "Proceso repetido, periodicidad",
+      "hipotesis": "Transición determinista",
+      "procedimiento": "Definir estado; iterar hasta repetición",
+      "problemas": [
+        "P24"
+      ],
+      "capitulos": "13",
+      "ficha": "11",
+      "videos": [
+        "V14"
+      ],
+      "repaso": "30 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T22",
+      "bloque": "Modelización",
+      "tecnica": "Recurrencia afín y proceso inverso",
+      "nivel": "A",
+      "senales": "Repartos sucesivos",
+      "hipotesis": "Integridad en cada etapa",
+      "procedimiento": "Escribir transformación; invertir; imponer congruencias",
+      "problemas": [
+        "P24"
+      ],
+      "capitulos": "13,14",
+      "ficha": "11",
+      "videos": [
+        "V14"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T23",
+      "bloque": "Geometría",
+      "tecnica": "Ternas pitagóricas y residuos",
+      "nivel": "A",
+      "senales": "Triángulo rectángulo con lados enteros",
+      "hipotesis": "Pitágoras; no asumir primitiva",
+      "procedimiento": "Módulos 3 y 8; parametrizar solo si procede",
+      "problemas": [
+        "P25"
+      ],
+      "capitulos": "15",
+      "ficha": "12",
+      "videos": [
+        "V12"
+      ],
+      "repaso": "7 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T24",
+      "bloque": "Híbridos",
+      "tecnica": "Aritmética oculta",
+      "nivel": "B",
+      "senales": "Geometría, matrices, combinatoria con enteros",
+      "hipotesis": "Traducción correcta",
+      "procedimiento": "Extraer estructura aritmética y volver al contexto",
+      "problemas": [
+        "P10",
+        "P24",
+        "P25"
+      ],
+      "capitulos": "16",
+      "ficha": "13",
+      "videos": [
+        "V09",
+        "V12"
+      ],
+      "repaso": "30 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T25",
+      "bloque": "Auditoría",
+      "tecnica": "Detección de enunciados falsos",
+      "nivel": "A",
+      "senales": "Resultado dudoso o casos omitidos",
+      "hipotesis": "Dominio y cuantificadores",
+      "procedimiento": "Casos pequeños; módulos; contraejemplo mínimo",
+      "problemas": [
+        "Auditoría P3",
+        "P6",
+        "A1"
+      ],
+      "capitulos": "17",
+      "ficha": "14",
+      "videos": [],
+      "repaso": "60-90 d",
+      "estado": "Activo"
+    },
+    {
+      "id": "T26",
+      "bloque": "Transferencia",
+      "tecnica": "Problema nuevo",
+      "nivel": "C",
+      "senales": "Variante no vista",
+      "hipotesis": "Técnica dominada nivel 3",
+      "procedimiento": "Reconocer; resolver; comprobar; repetir a 30 d",
+      "problemas": [
+        "T1-T12"
+      ],
+      "capitulos": "19",
+      "ficha": "14",
+      "videos": [
+        "Según técnica"
+      ],
+      "repaso": "30 d",
+      "estado": "Objetivo"
+    }
+  ]
+}

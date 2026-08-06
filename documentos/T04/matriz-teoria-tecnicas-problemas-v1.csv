@@ -1,0 +1,27 @@
+﻿ID;Bloque;Técnica;Nivel;Señales;Hipótesis críticas;Procedimiento;Problemas vinculados;Capítulos manual;Ficha rápida;Vídeo;Repaso;Estado
+T01;Diagnóstico;Reconocimiento de estructura;A;Divisibilidad, resto, existencia, clasificación o proceso;Dominio y cuantificadores;"Traducir; factorizar; comprobar hipótesis; elegir ruta";P2,P8,P10,P12,P15,P20,P24,P25;1;1;V09;24 h;Activo
+T02;Divisibilidad;Algoritmo de Euclides;A;MCD, restos sucesivos, divisibilidad;Divisor no nulo;"Divisiones hasta resto 0; último resto no nulo";P20;2;2;V14;7 d;Activo
+T03;Divisibilidad;Bézout e inversos;A;Combinación lineal, inverso modular;MCD y coprimalidad;"Euclides extendido; sustitución; comprobación";P8,P12,P20,P24;2,5;2,5;V01;7 d;Activo
+T04;Diofánticas;Ecuación lineal;A;Soluciones enteras, reparto, monedas;mcd(a,b) divide c;"Particular; parametrización; filtrar cotas";P24;2,14;2;V03;30 d;Activo
+T05;Factorización;Valoraciones p-ádicas;A;Potencias primas, factoriales, divisibilidad fuerte;p primo;"Factorizar módulo; comparar exponentes";P12,P20,P25;3,9;3;V08;7 d;Activo
+T06;Factorización;Fórmula de Legendre;B;Exponente de p en n!, ceros finales;p primo;Sumar pisos n/p^k;Transferencia;3,22;3;V08,V15;30 d;Activo
+T07;Congruencias;Cálculo modular básico;A;Restos, polinomios, tablas pequeñas;m>=2;"Reducir; operar; cerrar con representante";P2,P8,P10,P12,P25;4;4;V02;24 h;Activo
+T08;Congruencias;Cancelación segura;A;División aparente en congruencias;d=mcd(c,m);"Reducir módulo a m/d; conservar m solo si d=1";P8,P12,P24;4;4;V02;7 d;Activo
+T09;Congruencias;Congruencias lineales;A;ax=b mod m;d=mcd(a,m) divide b;"Dividir por d; invertir; listar d clases";P24;5;5;V02,V01;7 d;Activo
+T10;Potencias;Orden multiplicativo;B;Potencias grandes con base coprima;mcd(a,m)=1;Buscar orden entre divisores de phi(m);P8,P12;6;6;V04,V13;30 d;Activo
+T11;Potencias;Últimas cifras;A;Última o dos últimas cifras;Módulo 10^k;"Ciclo directo; separar 4 y 25 si conviene";P8;6;6;V13;24 h;Activo
+T12;Potencias;Fermat y Euler;A;Exponente grande, módulo primo o compuesto;Primalidad/coprimalidad;"Separar caso no invertible; reducir exponente";P2,P8,P12;7;7;V04,V07;7 d;Activo
+T13;Potencias;Wilson;C;Factorial (p-1)! módulo p;p primo;Emparejar inversos;Transferencia;7;7;V04;60-90 d;Ampliación
+T14;TCR;Módulos coprimos;A;Sistema de restos;Coprimos dos a dos;Sustitución o fórmula constructiva;P8,P12;8;8;V05;7 d;Activo
+T15;TCR;Módulos no coprimos;B;Sistema con módulos compartidos;a=b mod mcd(m,n);"Comprobar compatibilidad; módulo final mcm";Transferencia;8;8;V06;30 d;Activo
+T16;Funciones;Número de divisores tau;A;Cantidad de divisores;Factorización completa;Producto de exponentes+1;P15;10;9;V10;7 d;Activo
+T17;Funciones;Suma de divisores sigma;A;Suma de divisores;Factorización completa;Producto de sumas geométricas;P15;10;9;V10,V11;7 d;Activo
+T18;Funciones;Phi de Euler;B;Coprimos menores, Euler;Factorización completa;n producto (1-1/p);P8,P12,P15;7,10;7,9;V07;30 d;Activo
+T19;Numeración;Criterios por la base;B;Cifras, bases, repunidades;Base posicional;Evaluar polinomio y reducir base;Transferencia;11;—;—;60-90 d;Complementario
+T20;Existencia;Principio del palomar;A;Más objetos que clases, diferencias divisibles;Conteo finito;"Definir objetos y cajas; traducir coincidencia";P10;12;10;V09;7 d;Activo
+T21;Recurrencias;Estados finitos módulo m;B;Proceso repetido, periodicidad;Transición determinista;"Definir estado; iterar hasta repetición";P24;13;11;V14;30 d;Activo
+T22;Modelización;Recurrencia afín y proceso inverso;A;Repartos sucesivos;Integridad en cada etapa;"Escribir transformación; invertir; imponer congruencias";P24;13,14;11;V14;7 d;Activo
+T23;Geometría;Ternas pitagóricas y residuos;A;Triángulo rectángulo con lados enteros;"Pitágoras; no asumir primitiva";"Módulos 3 y 8; parametrizar solo si procede";P25;15;12;V12;7 d;Activo
+T24;Híbridos;Aritmética oculta;B;Geometría, matrices, combinatoria con enteros;Traducción correcta;Extraer estructura aritmética y volver al contexto;P10,P24,P25;16;13;V09,V12;30 d;Activo
+T25;Auditoría;Detección de enunciados falsos;A;Resultado dudoso o casos omitidos;Dominio y cuantificadores;"Casos pequeños; módulos; contraejemplo mínimo";Auditoría P3,P6,A1;17;14;—;60-90 d;Activo
+T26;Transferencia;Problema nuevo;C;Variante no vista;Técnica dominada nivel 3;"Reconocer; resolver; comprobar; repetir a 30 d";T1-T12;19;14;Según técnica;30 d;Objetivo

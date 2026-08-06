@@ -1,0 +1,165 @@
+{
+  "meta": {
+    "tema": "T04",
+    "nota": "Los textos mostrados son resúmenes del cuaderno; no se presentan como transcripción literal del enunciado."
+  },
+  "problemas": [
+    {
+      "id": "P2",
+      "tema": "T04",
+      "fuente": "Ballesteros H11.2",
+      "enunciado_resumido": "Demostrar 6 | n(n^2+5)",
+      "tecnica_principal": "Divisibilidad universal",
+      "teoria_previa": "Congruencias mod 2 y 3; Fermat básico",
+      "ruta": "Separar 2 y 3; usar n^3≡n mod 3",
+      "error_frecuente": "Probar valores sin estructura",
+      "tiempo_objetivo": "10 min",
+      "capitulos": "3,7,9,18",
+      "fichas": "3,7",
+      "videos": [
+        "V04"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    },
+    {
+      "id": "P8",
+      "tema": "T04",
+      "fuente": "Ballesteros H11.8",
+      "enunciado_resumido": "Última cifra de 7^9999 y dos últimas de 7^6666",
+      "tecnica_principal": "Ciclos de potencias",
+      "teoria_previa": "Congruencias, orden, módulo 100",
+      "ruta": "Encontrar 7^4≡1 mod 100; reducir exponentes",
+      "error_frecuente": "Reducir exponente módulo 100",
+      "tiempo_objetivo": "12 min",
+      "capitulos": "6,7,8,18",
+      "fichas": "6,8",
+      "videos": [
+        "V13",
+        "V04"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    },
+    {
+      "id": "P10",
+      "tema": "T04",
+      "fuente": "Ballesteros H11.10 / Baleares B 06.14",
+      "enunciado_resumido": "Producto de variables y diferencias cuadráticas divisible por 7",
+      "tecnica_principal": "Palomar y residuos cuadrados",
+      "teoria_previa": "Cuadrados no nulos mod 7",
+      "ruta": "Separar caso múltiplo de 7; cuatro cuadrados en tres clases",
+      "error_frecuente": "Decir palomar sin definir cajas",
+      "tiempo_objetivo": "20 min",
+      "capitulos": "4,12,18",
+      "fichas": "4,10",
+      "videos": [
+        "V09"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    },
+    {
+      "id": "P12",
+      "tema": "T04",
+      "fuente": "Ballesteros H11.12",
+      "enunciado_resumido": "Demostrar 504 | a^9-a^3",
+      "tecnica_principal": "Módulo compuesto",
+      "teoria_previa": "Valoraciones; Fermat; cubos mod 9",
+      "ruta": "Separar 8,9,7 y cerrar cada componente",
+      "error_frecuente": "Probar solo divisibilidad por 2,3,7",
+      "tiempo_objetivo": "20 min",
+      "capitulos": "3,7,9,18",
+      "fichas": "3,7",
+      "videos": [
+        "V04",
+        "V08"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    },
+    {
+      "id": "P15",
+      "tema": "T04",
+      "fuente": "Ballesteros H02.5",
+      "enunciado_resumido": "Divisores de 360: número, suma y producto",
+      "tecnica_principal": "Funciones aritméticas",
+      "teoria_previa": "Factorización; tau; sigma",
+      "ruta": "360=2^3·3^2·5; aplicar fórmulas",
+      "error_frecuente": "Enumerar y perder divisores",
+      "tiempo_objetivo": "15 min",
+      "capitulos": "10,18",
+      "fichas": "9",
+      "videos": [
+        "V07",
+        "V10",
+        "V11"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    },
+    {
+      "id": "P20",
+      "tema": "T04",
+      "fuente": "Ballesteros H02.10",
+      "enunciado_resumido": "Pares con mcd 8 y mcm 504",
+      "tecnica_principal": "Reparto de potencias primas",
+      "teoria_previa": "MCD/MCM; coprimalidad",
+      "ruta": "a=8x,b=8y; xy=63; repartir 3^2 y 7 completos",
+      "error_frecuente": "Repartir un mismo primo entre x e y",
+      "tiempo_objetivo": "15 min",
+      "capitulos": "2,3,10,18",
+      "fichas": "2,3,9",
+      "videos": [
+        "V01"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    },
+    {
+      "id": "P24",
+      "tema": "T04",
+      "fuente": "Galicia 2024 opción 2, 6.8",
+      "enunciado_resumido": "Problema de los cocos entre 200 y 300",
+      "tecnica_principal": "Recurrencia afín",
+      "teoria_previa": "Diofánticas; congruencias; intervalos",
+      "ruta": "Modelizar o invertir; congruencia mod 3^4; verificar etapas",
+      "error_frecuente": "Comprobar solo el valor final",
+      "tiempo_objetivo": "30 min",
+      "capitulos": "5,8,13,14,18",
+      "fichas": "5,11",
+      "videos": [
+        "V02",
+        "V14"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    },
+    {
+      "id": "P25",
+      "tema": "T04",
+      "fuente": "Andalucía 2025, 1(c)",
+      "enunciado_resumido": "Producto de catetos múltiplo de 12",
+      "tecnica_principal": "Geometría y residuos",
+      "teoria_previa": "Pitágoras; cuadrados mod 3 y 8",
+      "ruta": "Forzar factor 3 y factor 4; recombinar",
+      "error_frecuente": "Suponer terna primitiva",
+      "tiempo_objetivo": "25 min",
+      "capitulos": "4,9,15,16,18",
+      "fichas": "4,12",
+      "videos": [
+        "V12"
+      ],
+      "dominio_inicial": "Nivel 0",
+      "tipo_texto": "resumen",
+      "enunciado_completo": null
+    }
+  ]
+}

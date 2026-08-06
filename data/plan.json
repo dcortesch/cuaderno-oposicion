@@ -1,0 +1,437 @@
+{
+  "meta": {
+    "titulo": "Plan de preparación de 9 meses",
+    "fecha_actualizacion": "2026-08-06",
+    "fuente": "Plan Ballesteros memorizado en el proyecto OPOSICIONES",
+    "nota": "La entrega piloto T04 se muestra además como ruta personal. En el plan Ballesteros, T04 aparece en el mes 3, semana 3."
+  },
+  "meses": [
+    {
+      "mes": 1,
+      "objetivo": "Inicio del itinerario y establecimiento del sistema de trabajo",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T03",
+          "area": "Probabilidad",
+          "titulo": "Combinatoria y técnicas de recuento",
+          "problemas": "Problemas asociados de combinatoria"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T01",
+          "area": "Aritmética",
+          "titulo": "Tema 1",
+          "problemas": "Problemas asociados de aritmética"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T14",
+          "area": "Álgebra",
+          "titulo": "Tema 14",
+          "problemas": "Problemas asociados de álgebra"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T08",
+          "area": "Análisis",
+          "titulo": "Tema 8",
+          "problemas": "Problemas asociados de análisis"
+        }
+      ],
+      "opcional": {
+        "tema": "T02",
+        "titulo": "Tema adicional u opcional"
+      },
+      "cierre": [
+        "Simulacro de problemas",
+        "Simulacro de temas",
+        "Revisión del proceso de oposición y del aula virtual"
+      ]
+    },
+    {
+      "mes": 2,
+      "objetivo": "Geometría, probabilidad, aritmética y análisis",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T39",
+          "area": "Geometría",
+          "titulo": "Tema 39",
+          "problemas": "Problemas asociados de geometría"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T64",
+          "area": "Probabilidad",
+          "titulo": "Tema 64",
+          "problemas": "Problemas asociados de probabilidad"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T09",
+          "area": "Aritmética",
+          "titulo": "Tema 9",
+          "problemas": "Problemas asociados de aritmética"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T11",
+          "area": "Análisis",
+          "titulo": "Tema 11",
+          "problemas": "Problemas asociados de análisis"
+        }
+      ],
+      "opcional": {
+        "tema": "T20",
+        "titulo": "Tema adicional u opcional"
+      },
+      "cierre": [
+        "Simulacro de problemas",
+        "Simulacro de temas",
+        "Consulta de la rúbrica de Madrid 2018"
+      ]
+    },
+    {
+      "mes": 3,
+      "objetivo": "Álgebra, geometría, aritmética y análisis",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T12",
+          "area": "Álgebra",
+          "titulo": "Tema 12",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T51",
+          "area": "Geometría",
+          "titulo": "Tema 51",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T04",
+          "area": "Aritmética",
+          "titulo": "Números enteros, divisibilidad, primos y congruencias",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T21",
+          "area": "Análisis",
+          "titulo": "Tema 21",
+          "problemas": "Problemas asociados"
+        }
+      ],
+      "opcional": {
+        "tema": "T05",
+        "titulo": "Los números racionales"
+      },
+      "cierre": [
+        "Simulacro de problemas",
+        "Simulacro de temas"
+      ]
+    },
+    {
+      "mes": 4,
+      "objetivo": "Matrices, determinantes, cónicas, límites y series",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T18",
+          "area": "Álgebra",
+          "titulo": "Matrices",
+          "problemas": "Juegos reiterados y teoría necesaria"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T19",
+          "area": "Álgebra",
+          "titulo": "Determinantes",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T54",
+          "area": "Geometría",
+          "titulo": "Cónicas",
+          "problemas": "Elementos, clasificación y problemas complejos"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T25",
+          "area": "Análisis",
+          "titulo": "Límites, continuidad y ramas infinitas",
+          "problemas": "Series numéricas"
+        }
+      ],
+      "opcional": {
+        "tema": "T10",
+        "titulo": "Tema adicional u opcional"
+      },
+      "cierre": [
+        "Simulacro de problemas",
+        "Simulacro de temas",
+        "Repaso de meses anteriores"
+      ]
+    },
+    {
+      "mes": 5,
+      "objetivo": "Distribuciones discretas, diofánticas, sistemas y derivadas",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T65",
+          "area": "Probabilidad",
+          "titulo": "Distribuciones de probabilidad de variable discreta",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T15",
+          "area": "Aritmética",
+          "titulo": "Ecuaciones diofánticas",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T16",
+          "area": "Álgebra",
+          "titulo": "Sistemas de ecuaciones",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T26",
+          "area": "Análisis",
+          "titulo": "Derivadas",
+          "problemas": "Series alternadas, series de potencias y Taylor"
+        }
+      ],
+      "opcional": {
+        "tema": "T28",
+        "titulo": "Tema adicional u opcional"
+      },
+      "cierre": [
+        "Simulacros en condiciones más realistas",
+        "Mantenimiento de repasos"
+      ]
+    },
+    {
+      "mes": 6,
+      "objetivo": "Integración, distribuciones continuas y polinomios",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T29",
+          "area": "Análisis",
+          "titulo": "Integral definida",
+          "problemas": "Integrales y segunda hoja de números complejos"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T66",
+          "area": "Probabilidad",
+          "titulo": "Distribuciones de probabilidad de variable continua",
+          "problemas": "Problemas asociados"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T13",
+          "area": "Álgebra",
+          "titulo": "Polinomios",
+          "problemas": "Diagonalización de matrices"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T30",
+          "area": "Análisis",
+          "titulo": "Primitivas e integración",
+          "problemas": "Integrales eulerianas e integral de Riemann"
+        }
+      ],
+      "opcional": {
+        "tema": "T45",
+        "titulo": "Tema adicional u opcional"
+      },
+      "cierre": [
+        "Simulacro de problemas",
+        "Simulacro de temas"
+      ]
+    },
+    {
+      "mes": 7,
+      "objetivo": "Circunferencia, razón áurea, estadística e interpolación",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T40",
+          "area": "Geometría",
+          "titulo": "Geometría de la circunferencia",
+          "problemas": "Problemas de circunferencia"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T36",
+          "area": "Geometría",
+          "titulo": "Proporciones notables y razón áurea",
+          "problemas": "Segunda hoja de combinatoria"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T57",
+          "area": "Estadística",
+          "titulo": "Usos de la estadística; descriptiva e inferencial",
+          "problemas": "Segunda hoja de números y probabilidad clásica"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T24",
+          "area": "Análisis",
+          "titulo": "Interpolación de funciones",
+          "problemas": "Problemas de funciones"
+        }
+      ],
+      "opcional": {
+        "tema": "T58",
+        "titulo": "Tema adicional u opcional"
+      },
+      "cierre": [
+        "Simulacros con tiempo cada vez más realista"
+      ]
+    },
+    {
+      "mes": 8,
+      "objetivo": "Trigonometría, geometría afín y optimización",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T37",
+          "area": "Geometría",
+          "titulo": "Semejanza, Tales y razones trigonométricas",
+          "problemas": "Aplicaciones lineales y espacios vectoriales"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T38",
+          "area": "Geometría",
+          "titulo": "Trigonometría plana y resolución de triángulos",
+          "problemas": "Lugares geométricos"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T52",
+          "area": "Geometría",
+          "titulo": "Geometría afín",
+          "problemas": "Segunda hoja de distribuciones continuas"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T53",
+          "area": "Geometría",
+          "titulo": "Geometría afín y relaciones métricas",
+          "problemas": "Optimización"
+        }
+      ],
+      "opcional": {
+        "tema": "T59",
+        "titulo": "Tema adicional u opcional"
+      },
+      "cierre": [
+        "Simulacros con tiempo real y sin apuntes"
+      ]
+    },
+    {
+      "mes": 9,
+      "objetivo": "Funciones especiales, historia de la geometría y estadística",
+      "semanas": [
+        {
+          "semana": 1,
+          "tipo": "principal",
+          "tema": "T22",
+          "area": "Análisis",
+          "titulo": "Funciones exponenciales y logarítmicas",
+          "problemas": "Transformaciones geométricas"
+        },
+        {
+          "semana": 2,
+          "tipo": "principal",
+          "tema": "T23",
+          "area": "Análisis",
+          "titulo": "Funciones circulares e hiperbólicas",
+          "problemas": "Segunda hoja de funciones"
+        },
+        {
+          "semana": 3,
+          "tipo": "principal",
+          "tema": "T56",
+          "area": "Geometría",
+          "titulo": "Evolución e historia de la geometría",
+          "problemas": "Curvas polares y paramétricas"
+        },
+        {
+          "semana": 4,
+          "tipo": "principal",
+          "tema": "T60",
+          "area": "Estadística",
+          "titulo": "Parámetros estadísticos",
+          "problemas": "Aplicaciones de la integral"
+        }
+      ],
+      "opcional": {
+        "tema": "T69",
+        "titulo": "Resolución de problemas en Matemáticas"
+      },
+      "cierre": [
+        "Últimos simulacros de problemas y temas",
+        "Tiempo real y sin apuntes"
+      ]
+    }
+  ],
+  "ruta_personal": {
+    "titulo": "Entregas elaboradas fuera de la posición original del plan",
+    "entregas": [
+      {
+        "mes_personal": 1,
+        "semana_personal": 1,
+        "tema": "T04",
+        "estado": "elaborado",
+        "nota": "Entrega piloto completa. En el plan Ballesteros figura en el mes 3, semana 3."
+      }
+    ]
+  }
+}

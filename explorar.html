@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explorador navegable del sistema de preparación de oposiciones de Matemáticas.">
+  <title>Explorar · Cuaderno de Oposición</title>
+  <link rel="stylesheet" href="assets/css/explorer.css">
+  
+</head>
+<body data-page="explorar">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-kicker">OPOSICIONES</span>
+        <strong>Cuaderno navegable</strong>
+        <small>Matemáticas · Secundaria</small>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a data-nav="dashboard" href="index.html">Inicio</a>
+        <a data-nav="explorar" href="explorar.html">Explorar</a>
+        <a data-nav="plan" href="plan.html">Plan de 9 meses</a>
+        <a data-nav="temas" href="temas.html">Temas</a>
+        <a data-nav="problemas" href="problemas.html">Problemas</a>
+        <a data-nav="seguimiento" href="seguimiento.html">Repasos y evidencias</a>
+        <a data-nav="programacion" href="programacion.html">Programación</a>
+        <a data-nav="biblioteca" href="biblioteca.html">Biblioteca</a>
+      </nav>
+      <div class="sidebar-note">
+        <b>Principio del sistema</b>
+        <span>Elaborado no significa dominado. El dominio exige recuperación, tiempo y corrección.</span>
+      </div>
+      <div class="sidebar-meta">Versión explorador 1.0 · 6 ago 2026</div>
+    </aside>
+    <div class="page-column">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Abrir navegación">☰</button>
+        <div class="topbar-title">Explorar</div>
+        <a class="topbar-action" href="explorar.html">Buscar</a>
+      </header>
+      <main class="page-content">
+        
+<section class="page-intro"><span class="eyebrow">Buscador global</span><h1>Explorar todo el sistema</h1><p>Busca simultáneamente en temas, técnicas, problemas, vídeos y biblioteca.</p></section>
+<section class="search-panel">
+  <div class="search-combo large"><input id="globalSearch" type="search" autofocus placeholder="Escribe una técnica, tema, problema, fuente o recurso"><button id="clearGlobalSearch" class="secondary">Limpiar</button></div>
+  <div class="filter-row"><button class="chip active" data-search-type="todos">Todo</button><button class="chip" data-search-type="tema">Temas</button><button class="chip" data-search-type="tecnica">Técnicas</button><button class="chip" data-search-type="problema">Problemas</button><button class="chip" data-search-type="video">Vídeos</button><button class="chip" data-search-type="recurso">Biblioteca</button></div>
+</section>
+<div id="globalSearchSummary" class="result-summary"></div>
+<section id="globalSearchResults" class="search-results"></section>
+
+      </main>
+      <footer class="site-footer">
+        <span>Cuaderno de Oposición · Datos estáticos + progreso local del navegador.</span>
+        <a href="README_EXPLORADOR.md">Documentación</a>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

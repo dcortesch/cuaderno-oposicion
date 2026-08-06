@@ -1,0 +1,205 @@
+{
+  "generated": "2026-08-06",
+  "files": [
+    {
+      "path": "404.html",
+      "bytes": 333,
+      "sha256": "2c8def8681480f84814ba42f3a3b7d47209d876f6b2cba0ac9a8b558fe43009d"
+    },
+    {
+      "path": "INSTRUCCIONES_SUBIDA.md",
+      "bytes": 831,
+      "sha256": "784cbb8cf6035a2959c1dc4b875820705e6c33a5e1b1efa3d3aafa039c3916bd"
+    },
+    {
+      "path": "PREVIEW_LOCAL.bat",
+      "bytes": 68,
+      "sha256": "fc2e0bebe9e2a5c56b21394eb0f15c9b83e4aca08246a01ec8f3e356a9daf985"
+    },
+    {
+      "path": "README_EXPLORADOR.md",
+      "bytes": 1495,
+      "sha256": "c71ab4ceb5ccb90c7f3e42aa83936587b491d6db1f4b8fa80963f08dd469deb4"
+    },
+    {
+      "path": "assets/css/explorer.css",
+      "bytes": 15684,
+      "sha256": "c07c6eed6da0c47276616f243b4d74c2251eb8b83f57adec07fe1760336dd03e"
+    },
+    {
+      "path": "assets/js/app.js",
+      "bytes": 20788,
+      "sha256": "a1d0d241295d83da20e97dbf3c46bf675bbd76dd3940f35841d9b5d3231e4ae3"
+    },
+    {
+      "path": "biblioteca.html",
+      "bytes": 2704,
+      "sha256": "eda8410da767bc614840c5de8e2ffd504554eb9922179071b0dbd1bce8685719"
+    },
+    {
+      "path": "data/biblioteca.json",
+      "bytes": 3044,
+      "sha256": "b693dde4e569a6300ed062a4084f1d0c78fe8aac612018f6d168fcee871ca685"
+    },
+    {
+      "path": "data/plan.json",
+      "bytes": 12217,
+      "sha256": "696e3b17232e077c3af8e6f016ef1812027064a8b717613791cac579fc417bf9"
+    },
+    {
+      "path": "data/problemas.json",
+      "bytes": 5257,
+      "sha256": "922b6b04fb536472901165e07aefb4c889d8acffb68867df0d7eaa8a521afc6e"
+    },
+    {
+      "path": "data/repasos.json",
+      "bytes": 2166,
+      "sha256": "5aa90397b55937f07b2d9a80bc4bf3434eb7008e081ff0fe357552a6e3611621"
+    },
+    {
+      "path": "data/tecnicas.json",
+      "bytes": 12693,
+      "sha256": "3850cbf4d224cda2ecf72d59fd4d3705b154c66505dd63b6012634daf022622a"
+    },
+    {
+      "path": "data/temas.json",
+      "bytes": 18345,
+      "sha256": "574de2aa5e7853986d109773382c2eb3688119ac23116bbb8a95cdea7b2b9a6f"
+    },
+    {
+      "path": "data/videos.json",
+      "bytes": 6216,
+      "sha256": "c3380a14012f61286e8da6f13bb90ac5a7f515ee318c05a43e232e691db0435e"
+    },
+    {
+      "path": "documentos/T04/catalogo-recursos-audiovisuales.md",
+      "bytes": 3892,
+      "sha256": "42ae2258e7f7dc379c322ca7f4ec61a26d594f1dce2049e2fa6794b0d44f47a7"
+    },
+    {
+      "path": "documentos/T04/control-calidad.md",
+      "bytes": 1317,
+      "sha256": "5818cc67bdd01098269e73036ad6bd5eef8db3829e0b02073dc5dbd3722ba387"
+    },
+    {
+      "path": "documentos/T04/fichas-rapidas-v1.pdf",
+      "bytes": 262383,
+      "sha256": "7c0eee218f7cd9feda75b6d36aae949d2a29c19fb7234d48b0c1c7fa68cabeb4"
+    },
+    {
+      "path": "documentos/T04/fichas-rapidas-v1.tex",
+      "bytes": 9319,
+      "sha256": "f1cb2fc671307b569e3957e09ff7df2b9a928a0fbff0b7029852d7ecbb8793b7"
+    },
+    {
+      "path": "documentos/T04/manual-operativo-problemas-v2.pdf",
+      "bytes": 576873,
+      "sha256": "5438781951f7977716dea4d45cd025181d1dc9aa0d50bb0c699582bd1fb34de1"
+    },
+    {
+      "path": "documentos/T04/manual-operativo-problemas-v2.tex",
+      "bytes": 5725,
+      "sha256": "8b7847deabb33b8440bb9d2ddec38a988a15567ea9ec39411325d7ff87d27a9f"
+    },
+    {
+      "path": "documentos/T04/mapa-maestro-recursos-v2.pdf",
+      "bytes": 215865,
+      "sha256": "efd1a35e6013a59a89ef886eb3063a30f9f57ef5a6a5b96b20aa7bfe5ff5fd0f"
+    },
+    {
+      "path": "documentos/T04/matriz-teoria-tecnicas-problemas-v1.csv",
+      "bytes": 4479,
+      "sha256": "74b32927ed69b6b4bd3de9091090308b506927b9c928b37192276821a368b137"
+    },
+    {
+      "path": "documentos/T04/matriz-teoria-tecnicas-problemas-v1.xlsx",
+      "bytes": 17963,
+      "sha256": "a816653772ffd1e9b7bd1a29e43a96aba9841995e536d10cf8d4be0836f2c01e"
+    },
+    {
+      "path": "documentos/T04/seleccion-semanal-8-problemas.pdf",
+      "bytes": 221208,
+      "sha256": "2bc86a1f27d599ab6c2e9c4f21a8ebd08cfe4d39aa5f18cbb7a7e2e87dcf77c3"
+    },
+    {
+      "path": "documentos/T04/simulacro-90min.pdf",
+      "bytes": 122289,
+      "sha256": "3b6d8dfda8284aa7d825fde4ec65ce7d648ec3b3ff93e8350c37150cf99add7b"
+    },
+    {
+      "path": "documentos/T04/sistema-tres-niveles-readme.md",
+      "bytes": 3532,
+      "sha256": "bd49854e23a935e317ed7263547af48949f36431703a42bfdb9ea9a55b5e0210"
+    },
+    {
+      "path": "documentos/T04/tema-examen-esencial-v5.pdf",
+      "bytes": 252684,
+      "sha256": "0de7439a8f1fc06b4b3bf2842f22d166fc1034e7bfbafd3a2ffd98b0ee194c56"
+    },
+    {
+      "path": "documentos/T04/tema-examen-esencial-v5.tex",
+      "bytes": 7702,
+      "sha256": "d177c95d7c51566e865d638d7d9b134b2c4f708d510af8a357a1c6bab200dbe4"
+    },
+    {
+      "path": "documentos/T04/tema-examen-modular-v4.pdf",
+      "bytes": 302638,
+      "sha256": "b2e06fb21f7418d8eb3ee6b1126ccde3a6180ac3e08d288a06ae8979457a768b"
+    },
+    {
+      "path": "documentos/T04/tema-examen-modular-v4.tex",
+      "bytes": 12270,
+      "sha256": "8799be44093a2b2e3e67ad173ec851910edefe00a2f5a2f35ce0d4a75a3105e1"
+    },
+    {
+      "path": "explorar.html",
+      "bytes": 3213,
+      "sha256": "91f594d1ddbbd1b4bd2cfb1323f1379d40aa6784b4d7dcfb20d2f817b08828e2"
+    },
+    {
+      "path": "index.html",
+      "bytes": 4756,
+      "sha256": "c07633c80e7edb2114432c60f2f70b8eeee295402bab8319760700f426a6ad66"
+    },
+    {
+      "path": "plan.html",
+      "bytes": 2762,
+      "sha256": "729afacfd5cf64e594719bdbad571aa5a58f943fe4e81a475cbb0fe59239b87f"
+    },
+    {
+      "path": "preview-local.sh",
+      "bytes": 38,
+      "sha256": "cd6e5507084a72d6cf7387022a1c5a898609e3ea04b4c8d7885727925a2d2e7e"
+    },
+    {
+      "path": "problemas.html",
+      "bytes": 3341,
+      "sha256": "e8a5147896d983ade27343c3f85c4be7bef2af881fb8f5ac40479b9120b16da4"
+    },
+    {
+      "path": "programacion.html",
+      "bytes": 4356,
+      "sha256": "4a03f49d6b5a1bf7dbd80954d991ad75348356e1aaad845e8b99e24bd25e7a26"
+    },
+    {
+      "path": "robots.txt",
+      "bytes": 23,
+      "sha256": "16ceb5ee3e0dc13aa9adf31a3ebbe45a1d965b8c2b9f72eaf84e5911e140ed95"
+    },
+    {
+      "path": "seguimiento.html",
+      "bytes": 3515,
+      "sha256": "3f40e4e73f30bae819a8c1fabe126c1f36ea017858f50445fd65994e89c72157"
+    },
+    {
+      "path": "tema.html",
+      "bytes": 2711,
+      "sha256": "3e66e0aba758bf7740bfd1684e128175d2948cb285b725de46d14747f6c3c3f1"
+    },
+    {
+      "path": "temas.html",
+      "bytes": 2997,
+      "sha256": "504114282adcec5cedfd62d74ae3bf84aa9f664989211dbf8d3d73107986a1ba"
+    }
+  ]
+}

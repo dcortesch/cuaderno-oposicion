@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explorador navegable del sistema de preparación de oposiciones de Matemáticas.">
+  <title>Problemas · Cuaderno de Oposición</title>
+  <link rel="stylesheet" href="assets/css/explorer.css">
+  
+</head>
+<body data-page="problemas">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-kicker">OPOSICIONES</span>
+        <strong>Cuaderno navegable</strong>
+        <small>Matemáticas · Secundaria</small>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a data-nav="dashboard" href="index.html">Inicio</a>
+        <a data-nav="explorar" href="explorar.html">Explorar</a>
+        <a data-nav="plan" href="plan.html">Plan de 9 meses</a>
+        <a data-nav="temas" href="temas.html">Temas</a>
+        <a data-nav="problemas" href="problemas.html">Problemas</a>
+        <a data-nav="seguimiento" href="seguimiento.html">Repasos y evidencias</a>
+        <a data-nav="programacion" href="programacion.html">Programación</a>
+        <a data-nav="biblioteca" href="biblioteca.html">Biblioteca</a>
+      </nav>
+      <div class="sidebar-note">
+        <b>Principio del sistema</b>
+        <span>Elaborado no significa dominado. El dominio exige recuperación, tiempo y corrección.</span>
+      </div>
+      <div class="sidebar-meta">Versión explorador 1.0 · 6 ago 2026</div>
+    </aside>
+    <div class="page-column">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Abrir navegación">☰</button>
+        <div class="topbar-title">Problemas</div>
+        <a class="topbar-action" href="explorar.html">Buscar</a>
+      </header>
+      <main class="page-content">
+        
+<section class="page-intro"><span class="eyebrow">Entrenamiento T04</span><h1>Problemas núcleo</h1><p>Los textos visibles son resúmenes del cuaderno, no transcripciones literales. El PDF de selección conserva el desarrollo preparado.</p></section>
+<div class="notice"><b>Regla:</b> intenta primero. Consulta teoría o vídeo únicamente después de identificar el bloqueo exacto.</div>
+<section class="filters-card">
+  <input id="problemQuery" type="search" placeholder="Buscar por fuente, técnica o contenido">
+  <select id="problemTechnique"><option value="">Todas las técnicas</option></select>
+  <select id="problemMastery"><option value="">Cualquier dominio</option><option value="0">Nivel 0</option><option value="1">Nivel 1</option><option value="2">Nivel 2</option><option value="3">Nivel 3</option><option value="4">Nivel 4</option><option value="5">Nivel 5</option></select>
+</section>
+<div class="result-toolbar"><span id="problemCount"></span><a class="button-link secondary" href="documentos/T04/seleccion-semanal-8-problemas.pdf">Abrir selección PDF</a></div>
+<section id="problemList" class="problem-list"></section>
+
+      </main>
+      <footer class="site-footer">
+        <span>Cuaderno de Oposición · Datos estáticos + progreso local del navegador.</span>
+        <a href="README_EXPLORADOR.md">Documentación</a>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

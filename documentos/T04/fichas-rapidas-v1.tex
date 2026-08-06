@@ -1,0 +1,227 @@
+\documentclass[10pt,a4paper,openany]{report}
+\input{../01_MANUAL/t04_manual_style.tex}
+\renewcommand{\chaptername}{Ficha}
+\pagestyle{fancy}
+\rhead{\footnotesize\color{slate}T04.P02 · Fichas rápidas}
+\begin{document}
+\begin{titlepage}
+\centering\vspace*{2cm}
+{\Huge\bfseries\color{navy}T04.P02\par}\vspace{.4cm}
+{\LARGE\bfseries Fichas rápidas de técnicas\par}\vspace{.25cm}
+{\Large Divisibilidad, congruencias y problemas híbridos\par}
+\vfill
+\begin{tcolorbox}[colback=lightblue,colframe=navy,width=.86\textwidth]
+Catorce fichas de repaso para recuperar procedimientos sin releer el manual completo. Cada ficha debe usarse después de un intento, nunca antes del primer contacto con un problema.
+\end{tcolorbox}
+\vfill
+{\large Semana 01 · Tema 04 · Proyecto OPOSICIONES\par}
+{\small Agosto de 2026\par}
+\end{titlepage}
+
+\section*{Ficha 1 · Diagnóstico en dos minutos}
+\begin{ruta}[· Secuencia]
+\begin{enumerate}
+\item Traducir: divisibilidad, resto, existencia, clasificación o proceso.
+\item Factorizar el módulo y la expresión.
+\item Comprobar coprimalidad antes de Euler, Fermat o cancelación.
+\item Preguntar si hay estados finitos, clases residuales o sumas parciales.
+\item Escribir dos rutas plausibles y elegir la de menor coste.
+\end{enumerate}
+\end{ruta}
+\begin{tabularx}{\textwidth}{L{3.2cm}Y}
+\toprule Señal & Primer movimiento\\\midrule
+Últimas cifras & módulo $10^k$, ciclo u orden.\\
+MCD/MCM & extraer MCD y repartir potencias primas.\\
+Número de divisores & patrones de exponentes.\\
+Proceso repetido & recurrencia o transformación inversa.\\
+Cuadrados enteros & tablas módulo 3, 4, 8, 16.\\
+\bottomrule
+\end{tabularx}
+\begin{alerta}No calcular antes de decidir qué se quiere demostrar.\end{alerta}
+\clearpage
+
+\section*{Ficha 2 · Euclides, Bézout y diofánticas}
+\[
+a=bq+r,\quad0\le r<|b|,\qquad \mcd(a,b)=\mcd(b,r).
+\]
+\begin{procedimiento}
+Divisiones sucesivas; último resto no nulo; sustitución hacia atrás; comprobación. Para $ax+by=c$, exigir $d=\mcd(a,b)\mid c$ y parametrizar:
+\[
+x=x_0+\frac bd t,\qquad y=y_0-\frac ad t.
+\]
+\end{procedimiento}
+\begin{alerta}Bézout garantiza existencia, no unicidad de coeficientes.\end{alerta}
+\textbf{Vídeos:} \href{https://www.youtube.com/watch?v=09nDdgiQ-fs}{Euclides extendido e inverso modular}; \href{https://www.youtube.com/watch?v=k6-bbwRISOo}{ecuaciones diofánticas}.
+\clearpage
+
+\section*{Ficha 3 · Factorización y valoraciones}
+\[
+v_p(ab)=v_p(a)+v_p(b),\qquad v_p(a^r)=r\,v_p(a).
+\]
+\[
+v_p(n!)=\sum_{j\ge1}\left\lfloor\frac{n}{p^j}\right\rfloor.
+\]
+\begin{ruta}
+Para probar $m\mid N$: factorizar $m=\prod p_i^{e_i}$ y demostrar $v_{p_i}(N)\ge e_i$ para cada $i$.
+\end{ruta}
+\begin{alerta}Probar divisibilidad por $p$ no basta para probarla por $p^e$.\end{alerta}
+\textbf{Vídeos:} \href{https://www.youtube.com/watch?v=AIAYP3uKoyg}{fórmula de Legendre}; \href{https://www.youtube.com/watch?v=AAL2lu_Ov-8}{ceros finales de factoriales}.
+\clearpage
+
+\section*{Ficha 4 · Congruencias y cancelación}
+\[
+a\equiv b\pmod m\Longleftrightarrow m\mid(a-b).
+\]
+Suma, resta, producto y potencias son válidos. Para cancelar $c$ en
+\[
+ac\equiv bc\pmod m,
+\]
+poner $d=\mcd(c,m)$ y concluir
+\[
+a\equiv b\pmod{m/d}.
+\]
+Solo si $d=1$ se conserva el módulo.
+\begin{alerta}$4x\equiv8\pmod{12}$ equivale a $x\equiv2\pmod3$, no módulo 12.\end{alerta}
+\textbf{Tabla:} cuadrados mod 3: $0,1$; mod 4: $0,1$; mod 8: $0,1,4$; no nulos mod 7: $1,2,4$.
+\clearpage
+
+\section*{Ficha 5 · Congruencias lineales}
+Para $ax\equiv b\pmod m$, sea $d=\mcd(a,m)$.
+\begin{itemize}
+\item Hay solución si y solo si $d\mid b$.
+\item Si existe, hay $d$ clases módulo $m$.
+\item Dividir por $d$, invertir $a/d$ módulo $m/d$ y expresar la clase.
+\end{itemize}
+\begin{procedimiento}
+Resolver $18x\equiv30\pmod{42}$: dividir por 6, obtener $3x\equiv5\pmod7$, invertir 3 y expresar $x\equiv4\pmod7$.
+\end{procedimiento}
+\textbf{Vídeo:} \href{https://www.youtube.com/watch?v=uBgFI-cdS7o}{congruencias lineales - primeros ejemplos}.
+\clearpage
+
+\section*{Ficha 6 · Potencias, ciclos y últimas cifras}
+Si $\mcd(a,m)=1$, el orden $r=\ord_m(a)$ es el menor positivo con $a^r\equiv1\pmod m$, y $r\mid\varphi(m)$.
+\begin{ruta}
+Reducir base; buscar ciclo corto; reducir exponente módulo el período; controlar exponente congruente con 0; dar el resto canónico.
+\end{ruta}
+Última cifra: módulo 10. Dos últimas: módulo 100. Si la base no es unidad, separar módulo 4 y 25.
+\begin{alerta}El exponente no se reduce módulo $m$, sino módulo un período válido.\end{alerta}
+\textbf{Vídeo:} \href{https://www.youtube.com/watch?v=a0Sdj8guoLY}{hallar la última cifra}.
+\clearpage
+
+\section*{Ficha 7 · Fermat, Euler y Wilson}
+\[
+a^p\equiv a\pmod p,
+\]
+para $p$ primo; si $p\nmid a$, $a^{p-1}\equiv1\pmod p$.
+\[
+\mcd(a,m)=1\Longrightarrow a^{\varphi(m)}\equiv1\pmod m.
+\]
+\[
+p\text{ primo}\Longleftrightarrow(p-1)!\equiv-1\pmod p.
+\]
+\begin{ruta}
+Primo: Fermat. Compuesto y base coprima: Euler. Factorial $(p-1)!$: Wilson. Módulo pequeño: ciclo directo primero.
+\end{ruta}
+\textbf{Vídeos:} \href{https://www.youtube.com/watch?v=aFSLQDmOKl0}{Euler-Fermat}; \href{https://www.youtube.com/watch?v=H1-8wPKNTNE}{función $\varphi$}.
+\clearpage
+
+\section*{Ficha 8 · Teorema chino del resto}
+Módulos coprimos dos a dos: solución única módulo el producto. Fórmula:
+\[
+x\equiv\sum a_iM_iN_i\pmod M.
+\]
+Módulos no coprimos:
+\[
+x\equiv a\pmod m,\ x\equiv b\pmod n
+\]
+es compatible si y solo si $a\equiv b\pmod{\mcd(m,n)}$; la solución es única módulo $\mcm(m,n)$.
+\begin{alerta}No multiplicar módulos cuando no son coprimos.\end{alerta}
+\textbf{Vídeos:} \href{https://www.youtube.com/watch?v=oN9qrQ-i16k}{TCR PassItEDU}; \href{https://www.youtube.com/watch?v=v8XsnE1_u70}{clase extensa}.
+\clearpage
+
+\section*{Ficha 9 · Funciones aritméticas}
+Si $n=\prod p_i^{\alpha_i}$:
+\[
+\tau(n)=\prod(\alpha_i+1),
+\]
+\[
+\sigma(n)=\prod\frac{p_i^{\alpha_i+1}-1}{p_i-1},
+\]
+\[
+\prod_{d\mid n}d=n^{\tau(n)/2},
+\]
+\[
+\varphi(n)=n\prod_{p\mid n}\left(1-\frac1p\right).
+\]
+\begin{alerta}Los patrones de exponentes, no los primos concretos, determinan $\tau(n)$.\end{alerta}
+\textbf{Vídeos:} \href{https://www.youtube.com/watch?v=lgtovETcnbU}{función sigma}; \href{https://www.youtube.com/watch?v=osuEhzJlsGM}{suma de divisores}.
+\clearpage
+
+\section*{Ficha 10 · Palomar y residuos}
+\begin{ruta}
+Definir objetos; definir cajas; contar; obtener coincidencia; traducirla.
+\end{ruta}
+Aplicaciones:
+\begin{itemize}
+\item $m+1$ enteros $\Rightarrow$ dos con diferencia múltiplo de $m$;
+\item sumas parciales $\Rightarrow$ bloque consecutivo divisible;
+\item cuatro cuadrados no nulos mod 7 en tres clases $\Rightarrow$ dos coinciden.
+\end{itemize}
+\begin{alerta}«Por palomar» no es suficiente: hay que identificar palomas y palomares.\end{alerta}
+\textbf{Vídeo:} \href{https://www.youtube.com/watch?v=gyLtyPm49-c}{principio del palomar}.
+\clearpage
+
+\section*{Ficha 11 · Recurrencias y estados finitos}
+Para $x_{n+1}=ax_n+b$:
+\[
+x_n=a^nx_0+b\frac{a^n-1}{a-1}\quad(a\ne1).
+\]
+\begin{procedimiento}
+Definir estado; reducir transición módulo $m$; iterar hasta repetir; distinguir preperíodo y período; cruzar con cotas.
+\end{procedimiento}
+En una recurrencia de orden dos, el estado es el par $(x_n,x_{n+1})$.
+\begin{alerta}En procesos de reparto hay que verificar integridad en cada etapa.\end{alerta}
+\textbf{Vídeo:} \href{https://www.youtube.com/watch?v=TqVx4InC3NE}{sucesión recurrente y forma explícita}.
+\clearpage
+
+\section*{Ficha 12 · Ternas pitagóricas}
+\[
+a^2+b^2=c^2.
+\]
+Cuadrados mod 3: $0,1$; mod 8: $0,1,4$.
+\begin{ruta}
+Para probar $12\mid ab$: módulo 3 fuerza un cateto múltiplo de 3; paridad y módulo 8 fuerzan que el producto tenga factor 4.
+\end{ruta}
+Terna primitiva:
+\[
+a=m^2-n^2,\quad b=2mn,\quad c=m^2+n^2,
+\]
+con $\mcd(m,n)=1$ y paridades opuestas.
+\begin{alerta}No suponer primitivadad si el enunciado no la da.\end{alerta}
+\textbf{Vídeo:} \href{https://www.youtube.com/watch?v=c3jFerYqGok}{ternas pitagóricas}.
+\clearpage
+
+\section*{Ficha 13 · Rutas de los ocho problemas}
+\begin{tabularx}{\textwidth}{C{1cm}L{3.2cm}Y}
+\toprule ID & Señal & Primer movimiento\\\midrule
+P2&Divisibilidad universal&Separar 2 y 3; usar $n^3\equiv n$ mod 3.\\
+P8&Potencias grandes&Ciclos mod 10 y 100.\\
+P10&Producto de diferencias&Cuadrados no nulos mod 7 + palomar.\\
+P12&Módulo 504&Separar 8, 9 y 7.\\
+P15&Divisores de 360&Factorizar y aplicar $\tau,\sigma$.\\
+P20&MCD/MCM&Extraer 8 y repartir $3^2,7$.\\
+P24&Proceso repetido&Recurrencia inversa y congruencia.\\
+P25&Geometría entera&Cuadrados mod 3 y 8.\\
+\bottomrule
+\end{tabularx}
+\clearpage
+
+\section*{Ficha 14 · Errores y cierre}
+\begin{alerta}[· Errores que más penalizan]
+Cancelar sin coprimalidad; aplicar Euler sin hipótesis; usar Fermat módulo compuesto; olvidar potencias primas; multiplicar módulos no coprimos; no verificar etapas de una recurrencia; asumir terna primitiva; cerrar sin responder exactamente a lo pedido.
+\end{alerta}
+\begin{ruta}[· Criterio de dominio]
+Nivel 3: resuelve sin ayuda. Nivel 4: resuelve en tiempo. Nivel 5: resuelve una variante nueva y conserva el dominio a 30 días.
+\end{ruta}
+\textbf{Repasos:} 24 h: P2 + error principal. 7 días: dos problemas + uno nuevo. 30 días: cuatro problemas mixtos. 60--90 días: híbrido y auditoría.
+\end{document}

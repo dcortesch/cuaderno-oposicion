@@ -1,0 +1,844 @@
+{
+  "meta": {
+    "fecha_actualizacion": "2026-08-06",
+    "estados": [
+      "pendiente",
+      "en_elaboracion",
+      "elaborado",
+      "primer_recuerdo",
+      "repasado",
+      "escrito_en_tiempo",
+      "corregido",
+      "dominado",
+      "reactivacion"
+    ],
+    "nota": "Solo T04 dispone actualmente de materiales incorporados a este explorador. Los demás registros reproducen el plan y no implican que exista documentación publicada."
+  },
+  "temas": [
+    {
+      "id": "T01",
+      "titulo": "Tema 1",
+      "area": "Aritmética",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 1,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T02",
+      "titulo": "Tema adicional u opcional",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 1,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T03",
+      "titulo": "Combinatoria y técnicas de recuento",
+      "area": "Probabilidad",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 1,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T04",
+      "titulo": "Números enteros. Divisibilidad. Números primos. Congruencia",
+      "area": "Aritmética",
+      "estado": "elaborado",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 3,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [
+        {
+          "tipo": "web",
+          "titulo": "Lectura extensa actual",
+          "url": "t04.html",
+          "nota": "Página ya existente en el repositorio"
+        },
+        {
+          "tipo": "pdf",
+          "titulo": "Tema de examen modular v4",
+          "url": "documentos/T04/tema-examen-modular-v4.pdf"
+        },
+        {
+          "tipo": "pdf",
+          "titulo": "Tema de examen esencial v5",
+          "url": "documentos/T04/tema-examen-esencial-v5.pdf"
+        },
+        {
+          "tipo": "pdf",
+          "titulo": "Manual operativo de problemas",
+          "url": "documentos/T04/manual-operativo-problemas-v2.pdf"
+        },
+        {
+          "tipo": "pdf",
+          "titulo": "Fichas rápidas",
+          "url": "documentos/T04/fichas-rapidas-v1.pdf"
+        },
+        {
+          "tipo": "xlsx",
+          "titulo": "Matriz teoría-técnicas-problemas",
+          "url": "documentos/T04/matriz-teoria-tecnicas-problemas-v1.xlsx"
+        },
+        {
+          "tipo": "pdf",
+          "titulo": "Selección semanal de 8 problemas",
+          "url": "documentos/T04/seleccion-semanal-8-problemas.pdf"
+        },
+        {
+          "tipo": "pdf",
+          "titulo": "Mapa maestro de recursos",
+          "url": "documentos/T04/mapa-maestro-recursos-v2.pdf"
+        },
+        {
+          "tipo": "pdf",
+          "titulo": "Simulacro de 90 minutos",
+          "url": "documentos/T04/simulacro-90min.pdf"
+        }
+      ],
+      "evidencias": [],
+      "prioridad": "activa",
+      "resumen": "Tema piloto con capas de estudio, examen, memoria, problemas, base teórica operativa, recursos audiovisuales y seguimiento.",
+      "ruta_personal": {
+        "mes": 1,
+        "semana": 1
+      },
+      "conteos": {
+        "problemas_banco": 28,
+        "problemas_nucleo": 8,
+        "tecnicas": 26,
+        "videos": 15
+      },
+      "proximo_objetivo": "Realizar una escritura cronometrada de 90 minutos y registrar la evidencia."
+    },
+    {
+      "id": "T05",
+      "titulo": "Los números racionales",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 3,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T08",
+      "titulo": "Tema 8",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 1,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T09",
+      "titulo": "Tema 9",
+      "area": "Aritmética",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 2,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T10",
+      "titulo": "Tema adicional u opcional",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 4,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T11",
+      "titulo": "Tema 11",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 2,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T12",
+      "titulo": "Tema 12",
+      "area": "Álgebra",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 3,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T13",
+      "titulo": "Polinomios",
+      "area": "Álgebra",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 6,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T14",
+      "titulo": "Tema 14",
+      "area": "Álgebra",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 1,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T15",
+      "titulo": "Ecuaciones diofánticas",
+      "area": "Aritmética",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 5,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T16",
+      "titulo": "Sistemas de ecuaciones",
+      "area": "Álgebra",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 5,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T18",
+      "titulo": "Matrices",
+      "area": "Álgebra",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 4,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T19",
+      "titulo": "Determinantes",
+      "area": "Álgebra",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 4,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T20",
+      "titulo": "Tema adicional u opcional",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 2,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T21",
+      "titulo": "Tema 21",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 3,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T22",
+      "titulo": "Funciones exponenciales y logarítmicas",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 9,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T23",
+      "titulo": "Funciones circulares e hiperbólicas",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 9,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T24",
+      "titulo": "Interpolación de funciones",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 7,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T25",
+      "titulo": "Límites, continuidad y ramas infinitas",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 4,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T26",
+      "titulo": "Derivadas",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 5,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T28",
+      "titulo": "Tema adicional u opcional",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 5,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T29",
+      "titulo": "Integral definida",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 6,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T30",
+      "titulo": "Primitivas e integración",
+      "area": "Análisis",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 6,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T36",
+      "titulo": "Proporciones notables y razón áurea",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 7,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T37",
+      "titulo": "Semejanza, Tales y razones trigonométricas",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 8,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T38",
+      "titulo": "Trigonometría plana y resolución de triángulos",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 8,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T39",
+      "titulo": "Tema 39",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 2,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T40",
+      "titulo": "Geometría de la circunferencia",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 7,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T45",
+      "titulo": "Tema adicional u opcional",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 6,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T51",
+      "titulo": "Tema 51",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 3,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T52",
+      "titulo": "Geometría afín",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 8,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T53",
+      "titulo": "Geometría afín y relaciones métricas",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 8,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T54",
+      "titulo": "Cónicas",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 4,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T56",
+      "titulo": "Evolución e historia de la geometría",
+      "area": "Geometría",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 9,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T57",
+      "titulo": "Usos de la estadística; descriptiva e inferencial",
+      "area": "Estadística",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 7,
+          "semana": 3,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T58",
+      "titulo": "Tema adicional u opcional",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 7,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T59",
+      "titulo": "Tema adicional u opcional",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 8,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T60",
+      "titulo": "Parámetros estadísticos",
+      "area": "Estadística",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 9,
+          "semana": 4,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T64",
+      "titulo": "Tema 64",
+      "area": "Probabilidad",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 2,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T65",
+      "titulo": "Distribuciones de probabilidad de variable discreta",
+      "area": "Probabilidad",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 5,
+          "semana": 1,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T66",
+      "titulo": "Distribuciones de probabilidad de variable continua",
+      "area": "Probabilidad",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": false,
+      "posiciones": [
+        {
+          "mes": 6,
+          "semana": 2,
+          "tipo": "principal"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    },
+    {
+      "id": "T69",
+      "titulo": "Resolución de problemas en Matemáticas",
+      "area": "Transversal",
+      "estado": "pendiente",
+      "itinerario": true,
+      "opcional": true,
+      "posiciones": [
+        {
+          "mes": 9,
+          "semana": null,
+          "tipo": "opcional"
+        }
+      ],
+      "recursos": [],
+      "evidencias": []
+    }
+  ]
+}
