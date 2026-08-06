@@ -1,0 +1,115 @@
+\documentclass[10pt,a4paper]{article}
+\input{../00_COMPILACION/t04_estilo_v2.tex}
+\geometry{a4paper,top=1.5cm,bottom=1.55cm,left=1.65cm,right=1.65cm,headheight=14pt}
+\begin{document}
+\tituloT{Tema 4. Números enteros. Divisibilidad. Números primos. Congruencia}{T04.03 · Tema de examen esencial · versión 5 · núcleo A autosuficiente}
+
+\begin{idea}[Objetivo operativo]
+Versión cerrada para un primer simulacro de 90 minutos. Contiene el hilo completo, dos demostraciones centrales, una idea de prueba, ejemplos, contraejemplo, aplicación, proyección educativa y cuatro referencias. No contiene construcción formal de $\Z$, infinitud de los primos, funciones $\tau/\sigma$, Wilson ni RSA.
+\end{idea}
+
+\section{Introducción}
+Los números enteros constituyen el primer sistema numérico en el que la resta es una operación interna. En ellos surgen dos preguntas estructurales: cuándo un entero divide a otro y qué información se conserva al considerar únicamente los restos. De ambas nacen la divisibilidad, la teoría de números primos y las congruencias, que transforman problemas potencialmente ilimitados en problemas sobre factores o clases residuales.
+
+Euclides organizó el algoritmo del máximo común divisor y la teoría elemental de los primos; siglos después, Gauss convirtió las congruencias en un cálculo aritmético autónomo. Estas referencias cumplen una función matemática: explicar cómo se pasa de comparar medidas y descomponer números a operar con clases de restos.
+
+Partiremos de la división euclídea; enlazaremos Euclides con Bézout y las ecuaciones diofánticas; estableceremos la factorización prima; y construiremos finalmente el cálculo modular, Euler--Fermat y el teorema chino del resto.
+
+\section{Enteros y división euclídea}
+$(\Z,+,\cdot)$ es un anillo conmutativo con unidad, dominio de integridad y totalmente ordenado de forma compatible con sus operaciones. Sus unidades son $\pm1$.
+
+\begin{teorema}[División euclídea]
+Dados $a\in\Z$ y $b\ne0$, existen únicos $q,r\in\Z$ tales que
+\[
+a=bq+r,\qquad 0\le r<|b|.
+\]
+\end{teorema}
+\begin{proof}
+Para $b>0$, el conjunto $S=\{a-bk:k\in\Z,\ a-bk\ge0\}$ es no vacío. Sea $r=a-bq$ su mínimo. Si $r\ge b$, entonces $r-b\in S$ sería menor; luego $0\le r<b$. Si hubiera dos expresiones, $b(q-q')=r'-r$ y $|r'-r|<b$, de donde $r=r'$ y $q=q'$. Para $b<0$ se usa $|b|$.
+\end{proof}
+Por ejemplo, $-47=6(-8)+1$; el resto no puede ser $-5$.
+
+\section{Divisibilidad, MCD y Bézout}
+$a\mid b$ significa que $b=ak$ para algún $k\in\Z$. Si $a$ divide a $b$ y a $c$, divide toda combinación $ub+vc$.
+
+El máximo común divisor positivo $d=\mcd(a,b)$ divide a ambos números y todo divisor común divide a $d$. Si $a=bq+r$, entonces $\mcd(a,b)=\mcd(b,r)$. Iterando se obtiene el algoritmo de Euclides, que termina porque los restos decrecen.
+
+\begin{teorema}[Bézout]
+Si $d=\mcd(a,b)$, existen $u,v\in\Z$ tales que $d=au+bv$. Por ello, $ax+by=c$ tiene solución entera si y solo si $d\mid c$.
+\end{teorema}
+\begin{proof}
+El último resto no nulo del algoritmo es $d$. Sustituyendo hacia atrás se expresa como combinación de $a$ y $b$. Recíprocamente, todo divisor común divide cualquier combinación $au+bv$.
+\end{proof}
+Para $252$ y $198$, el algoritmo da $18=4\cdot252-5\cdot198$. Hunacek organiza división, Euclides y Bézout como una sola cadena conceptual.
+
+\section{Primos y factorización}
+Un entero $p>1$ es primo si solo tiene como divisores positivos $1$ y $p$.
+
+\begin{lema}[Euclides]
+Si $p$ es primo y $p\mid ab$, entonces $p\mid a$ o $p\mid b$.
+\end{lema}
+\begin{proof}
+Si $p\nmid a$, entonces $\mcd(p,a)=1$. Por Bézout, $up+va=1$; multiplicando por $b$ se concluye $p\mid b$.
+\end{proof}
+
+\begin{teorema}[Teorema fundamental de la aritmética]
+Todo entero $n>1$ es producto de primos de forma única salvo el orden.
+\end{teorema}
+La existencia se prueba por inducción fuerte; la unicidad, aplicando el lema de Euclides y cancelando sucesivamente. La factorización permite obtener el MCD y el MCM tomando, respectivamente, los exponentes mínimos y máximos de cada primo.
+
+\section{Congruencias}
+Para $m\ge2$,
+\[
+a\equiv b\pmod m\quad\Longleftrightarrow\quad m\mid(a-b).
+\]
+Es una relación de equivalencia compatible con suma y producto; sus clases forman el anillo $\Z/m\Z$. La clase de $a$ es invertible si y solo si $\mcd(a,m)=1$.
+
+La cancelación no es automática: $2\cdot1\equiv2\cdot4\pmod6$, pero $1\not\equiv4\pmod6$. Solo se cancela sin cambiar el módulo cuando el factor es coprimo con él.
+
+\begin{teorema}[Congruencia lineal]
+$ax\equiv b\pmod m$ tiene solución si y solo si $d=\mcd(a,m)$ divide a $b$; entonces posee exactamente $d$ soluciones módulo $m$.
+\end{teorema}
+\begin{proof}
+La congruencia equivale a $ax-my=b$, soluble por Bézout exactamente cuando $d\mid b$. Tras dividir por $d$, el coeficiente de $x$ es invertible módulo $m/d$.
+\end{proof}
+Ejemplo: $14x\equiv8\pmod{20}$ conduce a $7x\equiv4\pmod{10}$ y a $x\equiv2,12\pmod{20}$. Ivorra hace explícita esta conexión entre Bézout, inversos y solubilidad.
+
+\section{Euler--Fermat y teorema chino del resto}
+\begin{teorema}[Euler--Fermat]
+Si $\mcd(a,m)=1$, entonces $a^{\varphi(m)}\equiv1\pmod m$. En particular, si $p$ es primo, $a^p\equiv a\pmod p$.
+\end{teorema}
+Multiplicar por $a$ permuta las clases invertibles módulo $m$; al comparar sus productos y cancelar se obtiene la idea de la demostración.
+
+\begin{teorema}[Teorema chino del resto]
+Si $m_1,\ldots,m_r$ son coprimos dos a dos, el sistema $x\equiv a_i\pmod{m_i}$ tiene una única solución módulo $M=m_1\cdots m_r$.
+\end{teorema}
+Con $M_i=M/m_i$ y $u_iM_i\equiv1\pmod{m_i}$, una solución es $x_0=\sum a_iM_iu_i$. Dos soluciones difieren en un múltiplo de todos los módulos y, por tanto, de $M$.
+
+\section{Aplicación y proyección educativa}
+Los criterios de divisibilidad se obtienen reduciendo potencias de la base decimal. Si $N=\sum a_k10^k$, entonces, módulo $11$,
+\[
+N\equiv\sum a_k(-1)^k\pmod{11}.
+\]
+Así se justifica la suma alternada de cifras. Las últimas cifras se estudian módulo $10^s$ y los exponentes grandes mediante ciclos o Euler; Bézout y el TCR resuelven repartos y condiciones simultáneas.
+
+Didácticamente conviene explorar ejemplos, formular la conjetura y exigir después una prueba general, haciendo visibles las hipótesis mediante contraejemplos como el de la cancelación. Goñi y colaboradores relacionan el sentido numérico con elegir, estimar y justificar estrategias. Las órdenes andaluzas de 30 de mayo de 2023 conectan estos contenidos con resolución de problemas, razonamiento y pensamiento computacional.
+
+\section{Conclusión}
+La división euclídea aporta el principio algorítmico; Bézout expresa el MCD como combinación lineal y resuelve ecuaciones diofánticas; la factorización prima describe la estructura multiplicativa; y las congruencias conservan la información residual compatible con las operaciones. Esta cadena unifica criterios, ecuaciones, ciclos y sistemas y favorece el paso de la experimentación a la demostración.
+
+\begin{multicols}{2}\small
+\section*{Bibliografía}
+\begin{itemize}
+\item Boyer, C. B. y Merzbach, U. C. (1999). \emph{Historia de la matemática}.
+\item Hunacek, M. (2023). \emph{Introduction to Number Theory}.
+\item Ivorra Castillo, C. \emph{Introducción a la teoría algebraica de números}.
+\item Goñi, J. M. et al. (2011). \emph{Matemáticas. Complementos de formación disciplinar}.
+\end{itemize}
+\columnbreak
+\section*{Normativa}
+\begin{itemize}
+\item Orden de 30 de mayo de 2023, currículo de ESO en Andalucía.
+\item Orden de 30 de mayo de 2023, currículo de Bachillerato en Andalucía.
+\end{itemize}
+\end{multicols}
+\end{document}

@@ -1,0 +1,68 @@
+{
+  "meta": {
+    "tema": "T04",
+    "nota": "La marca de realizado se guarda localmente en el navegador."
+  },
+  "repasos": [
+    {
+      "id": "R01",
+      "tema": "T04",
+      "momento": "24 horas",
+      "duracion": "10-20 min",
+      "recuperacion": "Reconstruir árbol de decisión; enunciar cancelación y existencia de congruencia",
+      "problemas": "Rehacer P2 y el error principal",
+      "videos": "Sin vídeos salvo bloqueo",
+      "criterio": "Registrar primer paso no natural"
+    },
+    {
+      "id": "R02",
+      "tema": "T04",
+      "momento": "7 días",
+      "duracion": "45-60 min",
+      "recuperacion": "Explicar 4 técnicas sin consultar; recuperar fórmulas de tau/sigma",
+      "problemas": "Resolver 2 problemas semanales + 1 transferencia",
+      "videos": "Máximo 1 vídeo esencial",
+      "criterio": "Nivel 3 en al menos 6 problemas"
+    },
+    {
+      "id": "R03",
+      "tema": "T04",
+      "momento": "30 días",
+      "duracion": "90 min",
+      "recuperacion": "Simulacro mixto; TCR y potencias",
+      "problemas": "4 problemas, al menos 2 nuevos",
+      "videos": "V06 solo si TCR sigue débil",
+      "criterio": "Corregir con rúbrica"
+    },
+    {
+      "id": "R04",
+      "tema": "T04",
+      "momento": "60-90 días",
+      "duracion": "60-90 min",
+      "recuperacion": "Entrada por errores; híbridos y auditoría",
+      "problemas": "1 problema híbrido + 1 enunciado dudoso",
+      "videos": "Vídeo solo como reactivación",
+      "criterio": "Nivel 5 en 2 técnicas"
+    },
+    {
+      "id": "R05",
+      "tema": "T04",
+      "momento": "Mitad del curso",
+      "duracion": "90 min",
+      "recuperacion": "Selección de técnica bajo presión",
+      "problemas": "Mini-simulacro de aritmética",
+      "videos": "Ningún vídeo antes",
+      "criterio": "Comparar tiempos"
+    },
+    {
+      "id": "R06",
+      "tema": "T04",
+      "momento": "Final",
+      "duracion": "45-60 min",
+      "recuperacion": "Fichas rápidas y errores personales",
+      "problemas": "Problemas nuevos de nivel oposición",
+      "videos": "Vídeos solo fragmentos",
+      "criterio": "Manual cerrado durante el intento"
+    }
+  ]
+}

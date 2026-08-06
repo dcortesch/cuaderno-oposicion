@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explorador navegable del sistema de preparación de oposiciones de Matemáticas.">
+  <title>Temas · Cuaderno de Oposición</title>
+  <link rel="stylesheet" href="assets/css/explorer.css">
+  
+</head>
+<body data-page="temas">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-kicker">OPOSICIONES</span>
+        <strong>Cuaderno navegable</strong>
+        <small>Matemáticas · Secundaria</small>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a data-nav="dashboard" href="index.html">Inicio</a>
+        <a data-nav="explorar" href="explorar.html">Explorar</a>
+        <a data-nav="plan" href="plan.html">Plan de 9 meses</a>
+        <a data-nav="temas" href="temas.html">Temas</a>
+        <a data-nav="problemas" href="problemas.html">Problemas</a>
+        <a data-nav="seguimiento" href="seguimiento.html">Repasos y evidencias</a>
+        <a data-nav="programacion" href="programacion.html">Programación</a>
+        <a data-nav="biblioteca" href="biblioteca.html">Biblioteca</a>
+      </nav>
+      <div class="sidebar-note">
+        <b>Principio del sistema</b>
+        <span>Elaborado no significa dominado. El dominio exige recuperación, tiempo y corrección.</span>
+      </div>
+      <div class="sidebar-meta">Versión explorador 1.0 · 6 ago 2026</div>
+    </aside>
+    <div class="page-column">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Abrir navegación">☰</button>
+        <div class="topbar-title">Temas</div>
+        <a class="topbar-action" href="explorar.html">Buscar</a>
+      </header>
+      <main class="page-content">
+        
+<section class="page-intro"><span class="eyebrow">Catálogo</span><h1>Temas del itinerario</h1><p>Filtra por área, estado, mes o carácter opcional. Los temas pendientes aparecen como mapa del plan, no como material ya publicado.</p></section>
+<section class="filters-card">
+  <input id="themeQuery" type="search" placeholder="Buscar por número o título">
+  <select id="themeArea"><option value="">Todas las áreas</option></select>
+  <select id="themeStatus"><option value="">Todos los estados</option></select>
+  <select id="themeMonth"><option value="">Todos los meses</option></select>
+  <label class="check-inline"><input id="themeOptional" type="checkbox"> Solo opcionales</label>
+</section>
+<div id="themeCount" class="result-summary"></div>
+<section id="themeGrid" class="theme-grid"></section>
+
+      </main>
+      <footer class="site-footer">
+        <span>Cuaderno de Oposición · Datos estáticos + progreso local del navegador.</span>
+        <a href="README_EXPLORADOR.md">Documentación</a>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

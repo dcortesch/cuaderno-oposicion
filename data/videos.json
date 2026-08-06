@@ -1,0 +1,173 @@
+{
+  "meta": {
+    "tema": "T04",
+    "protocolo": "Intentar primero; localizar bloqueo; consultar; cerrar; reconstruir; resolver de nuevo."
+  },
+  "videos": [
+    {
+      "id": "V01",
+      "titulo": "Algoritmo Extendido de Euclides inverso modular - paso a paso",
+      "canal": "RepasoPaso",
+      "url": "https://www.youtube.com/watch?v=09nDdgiQ-fs",
+      "concepto": "Bézout e inversos",
+      "prioridad": "Esencial",
+      "uso": "Desbloqueo de sustituciones hacia atrás",
+      "verificacion": "Localizado por búsqueda web; revisar disponibilidad antes del cierre",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V02",
+      "titulo": "Ecuaciones lineales y congruencias - primeros ejemplos",
+      "canal": "Luis Jorge Matemáticas",
+      "url": "https://www.youtube.com/watch?v=uBgFI-cdS7o",
+      "concepto": "Congruencias lineales",
+      "prioridad": "Esencial",
+      "uso": "Consolidación de existencia y clases",
+      "verificacion": "Descripción indica apoyo UNAM-DGAPA-PAPIME",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V03",
+      "titulo": "Matemáticas Discretas - Ecuaciones Diofánticas",
+      "canal": "PassItEDU",
+      "url": "https://www.youtube.com/watch?v=k6-bbwRISOo",
+      "concepto": "Diofánticas",
+      "prioridad": "Complementario",
+      "uso": "Parametrización y restricciones",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V04",
+      "titulo": "Teorema de Euler Fermat",
+      "canal": "Agustín Valverde Ramos",
+      "url": "https://www.youtube.com/watch?v=aFSLQDmOKl0",
+      "concepto": "Euler-Fermat",
+      "prioridad": "Esencial",
+      "uso": "Potencias y congruencias",
+      "verificacion": "Descripción: aplicación a congruencias lineales",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V05",
+      "titulo": "Matemáticas Discretas - Teorema Chino del resto",
+      "canal": "PassItEDU",
+      "url": "https://www.youtube.com/watch?v=oN9qrQ-i16k",
+      "concepto": "TCR",
+      "prioridad": "Esencial",
+      "uso": "Construcción y ejercicios",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V06",
+      "titulo": "Teorema Chino del Resto | Matemática Discreta",
+      "canal": "Asimov Code",
+      "url": "https://www.youtube.com/watch?v=v8XsnE1_u70",
+      "concepto": "Diofánticas, inversos y TCR",
+      "prioridad": "Complementario",
+      "uso": "Clase extensa para repaso de 30 días",
+      "verificacion": "Descripción incluye capítulos temporales",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V07",
+      "titulo": "La función Phi de Euler",
+      "canal": "imUVa Divulgación en Matemáticas",
+      "url": "https://www.youtube.com/watch?v=H1-8wPKNTNE",
+      "concepto": "Función phi",
+      "prioridad": "Esencial",
+      "uso": "Definición y cálculo",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V08",
+      "titulo": "Fórmula de Legendre",
+      "canal": "Inevnum",
+      "url": "https://www.youtube.com/watch?v=AIAYP3uKoyg",
+      "concepto": "Valoración de n!",
+      "prioridad": "Esencial",
+      "uso": "Comprender el exponente de p en n!",
+      "verificacion": "Descripción indica demostración de la fórmula",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V09",
+      "titulo": "Un TEOREMA SENCILLO - El Principio del Palomar",
+      "canal": "Archimedes Tube",
+      "url": "https://www.youtube.com/watch?v=gyLtyPm49-c",
+      "concepto": "Principio del palomar",
+      "prioridad": "Esencial",
+      "uso": "Aplicaciones de existencia",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V10",
+      "titulo": "Teoría de números: la función aritmética sigma",
+      "canal": "CodeMaster: Ingeniería en acción",
+      "url": "https://www.youtube.com/watch?v=lgtovETcnbU",
+      "concepto": "Función sigma",
+      "prioridad": "Complementario",
+      "uso": "Propiedades y ejemplos",
+      "verificacion": "Descripción menciona sigma, rho y tau",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V11",
+      "titulo": "Cómo hallar la suma de divisores",
+      "canal": "MAT SHAO",
+      "url": "https://www.youtube.com/watch?v=osuEhzJlsGM",
+      "concepto": "Suma de divisores",
+      "prioridad": "Complementario",
+      "uso": "Comprobación operativa",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V12",
+      "titulo": "Teorema de Pitágoras 2 - Ternas pitagóricas",
+      "canal": "Profe Luis Conchas",
+      "url": "https://www.youtube.com/watch?v=c3jFerYqGok",
+      "concepto": "Ternas pitagóricas",
+      "prioridad": "Esencial",
+      "uso": "Ejemplos y reconocimiento",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V13",
+      "titulo": "Hallar la última cifra",
+      "canal": "Profe Richard",
+      "url": "https://www.youtube.com/watch?v=a0Sdj8guoLY",
+      "concepto": "Ciclos de potencias",
+      "prioridad": "Esencial",
+      "uso": "Activación rápida para P8",
+      "verificacion": "Vídeo breve",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V14",
+      "titulo": "Cálculo de una sucesión recurrente a partir del término general",
+      "canal": "Tuto mate",
+      "url": "https://www.youtube.com/watch?v=TqVx4InC3NE",
+      "concepto": "Recurrencias",
+      "prioridad": "Complementario",
+      "uso": "Distinguir forma recurrente y explícita",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    },
+    {
+      "id": "V15",
+      "titulo": "Factorial de un número, ceros finales",
+      "canal": "Chichipe",
+      "url": "https://www.youtube.com/watch?v=AAL2lu_Ov-8",
+      "concepto": "Ceros finales",
+      "prioridad": "Complementario",
+      "uso": "Aplicación de Legendre",
+      "verificacion": "Localizado por búsqueda web",
+      "fecha_revision": "2026-08-06"
+    }
+  ]
+}

@@ -1,0 +1,108 @@
+\documentclass[11pt,a4paper,openany]{book}
+\input{t04_manual_style.tex}
+\begin{document}
+\frontmatter
+\begin{titlepage}
+\centering
+\vspace*{1.1cm}
+{\Huge\bfseries\color{navy}T04.P01\par}
+\vspace{0.35cm}
+{\LARGE\bfseries Manual operativo de teoría para problemas\par}
+\vspace{0.2cm}
+{\Large Divisibilidad, congruencias y técnicas híbridas\par}
+\vspace{0.7cm}
+{\large Semana 01 · Tema 04 · Oposiciones de Matemáticas\par}
+\vfill
+\begin{tcolorbox}[colback=lightblue,colframe=navy,width=.88\textwidth,arc=2mm,boxrule=.7pt]
+\centering
+Sistema de tres niveles para reconocer, resolver, justificar y transferir las técnicas necesarias en P2, P8, P10, P12, P15, P20, P24 y P25, con recursos audiovisuales selectivos y rutas de repaso.
+\end{tcolorbox}
+\vfill
+{\large David Cortés Chaparro\par}
+{\small Proyecto OPOSICIONES · versión 2.0 · agosto de 2026\par}
+\end{titlepage}
+
+\chapter*{Nota de alcance, fuentes y uso de los vídeos}
+\addcontentsline{toc}{chapter}{Nota de alcance, fuentes y uso de los vídeos}
+Este manual no sustituye al tema escrito T04.02 ni al tema esencial T04.03. Su función es distinta: desarrollar la teoría que permite \emph{resolver problemas nuevos}, elegir una técnica con criterio y justificar todos los pasos. Por ello incorpora resultados y procedimientos que serían excesivos en una redacción de tema, pero resultan decisivos en la prueba práctica.
+
+El contenido parte de los materiales del proyecto disponibles en la sesión: T04.02 Tema de examen modular v4, T04.03 Tema esencial v5, T04.08 Selección semanal de 8 problemas, guía didáctica de aritmética, catálogo de las cuatro hojas de Ballesteros, relación de aritmética en problemas de oposición y mapa maestro T04 v2. Las ampliaciones operativas estándar se presentan como desarrollo matemático complementario, no como transcripción literal de una única fuente.
+
+Los vídeos son \textbf{apoyos opcionales}. Se han seleccionado por su correspondencia temática y por la información pública disponible en sus páginas. El manual sigue siendo autosuficiente: ningún resultado depende de verlos. La rutina correcta es intentar primero, identificar el bloqueo, ver el recurso concreto, cerrar el vídeo y repetir el ejercicio sin ayuda.
+
+\begin{nivelA}
+El Nivel A se domina durante la primera semana: definiciones, hipótesis, procedimientos y ejemplos directamente conectados con los ocho problemas seleccionados.
+\end{nivelA}
+\begin{nivelB}
+El Nivel B se trabaja en los repasos de 7 y 30 días: variantes, métodos alternativos y redacción completa.
+\end{nivelB}
+\begin{nivelC}
+El Nivel C se activa durante el año: transferencia a problemas no vistos, generalizaciones y conexiones híbridas.
+\end{nivelC}
+
+\chapter*{Cómo utilizar el manual}
+\addcontentsline{toc}{chapter}{Cómo utilizar el manual}
+Cada capítulo contiene teoría mínima, señales de reconocimiento, procedimiento, ejemplos, errores frecuentes y conexión explícita con los problemas. La secuencia recomendada es:
+\begin{enumerate}
+\item leer la teoría activa y declarar las hipótesis;
+\item cerrar el manual y reconstruir el procedimiento;
+\item rehacer el ejemplo sin mirar;
+\item resolver el problema vinculado;
+\item anotar el primer paso que no surgió de forma natural;
+\item repetir solo ese paso y volver a resolver el problema completo.
+\end{enumerate}
+
+\begin{ruta}[· Preguntas antes de calcular]
+\begin{enumerate}
+\item ¿La afirmación es de divisibilidad, resto, existencia, unicidad o clasificación?
+\item ¿El módulo es primo, potencia de primo o producto de factores coprimos?
+\item ¿La base es coprima con el módulo? Si no lo es, Euler o Fermat pueden no aplicarse.
+\item ¿La expresión factoriza en enteros consecutivos, diferencias de cuadrados o potencias primas?
+\item ¿Hay un número finito de estados o clases residuales que permita palomar o periodicidad?
+\item ¿La congruencia obtenida es condición suficiente o solo necesaria?
+\end{enumerate}
+\end{ruta}
+
+\tableofcontents
+\mainmatter
+\include{chapters/ch01}
+\include{chapters/ch02}
+\include{chapters/ch03}
+\include{chapters/ch04}
+\include{chapters/ch05}
+\include{chapters/ch06}
+\include{chapters/ch07}
+\include{chapters/ch08}
+\include{chapters/ch09}
+\include{chapters/ch10}
+\include{chapters/ch11}
+\include{chapters/ch12}
+\include{chapters/ch13}
+\include{chapters/ch14}
+\include{chapters/ch15}
+\include{chapters/ch16}
+\include{chapters/ch17}
+\include{chapters/ch18}
+\include{chapters/ch19}
+\include{chapters/ch20}
+\include{chapters/ch21}
+\include{chapters/ch22}
+\include{chapters/ch23}
+\include{chapters/ch24}
+
+\backmatter
+\chapter*{Bibliografía y materiales del proyecto}
+\addcontentsline{toc}{chapter}{Bibliografía y materiales del proyecto}
+\begin{itemize}
+\item Boyer, C. B. y Merzbach, U. C. \emph{Historia de la matemática}. Contexto funcional de Euclides y Gauss.
+\item Hunacek, M. \emph{Introduction to Number Theory}. División euclídea, Bézout, diofánticas y congruencias.
+\item Ivorra Castillo, C. \emph{Introducción a la teoría algebraica de números}. Inversos, congruencias lineales y TCR.
+\item Apostol, T. M. \emph{Introducción a la teoría analítica de números}. Funciones aritméticas y multiplicatividad.
+\item Ballesteros. Hojas H02 y H11 de aritmética y congruencias, según los materiales del proyecto.
+\item Materiales del proyecto: T04.02, T04.03, T04.08, guía didáctica de aritmética, catálogo de cuatro hojas y mapa maestro T04 v2.
+\end{itemize}
+
+\begin{alerta}[· Control de versión]
+Este manual debe actualizarse solo cuando un simulacro o un problema nuevo revele una carencia concreta. No se amplía por acumulación bibliográfica, sino por necesidad demostrada en la resolución.
+\end{alerta}
+\end{document}

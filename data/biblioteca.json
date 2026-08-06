@@ -1,0 +1,88 @@
+{
+  "meta": {
+    "fecha": "2026-08-06",
+    "nota": "Los enlaces externos conservan la visibilidad configurada por el propietario."
+  },
+  "recursos": [
+    {
+      "id": "M01",
+      "categoria": "Seguimiento",
+      "titulo": "Estado Maestro de la Preparación",
+      "tipo": "Google Doc",
+      "url": "https://docs.google.com/document/d/1abHH3uSUN9otSqxBoutLjfYn8uMLnOHRRIKaY_k5Ubo/edit",
+      "descripcion": "Progreso, evidencias, decisiones y próximas acciones."
+    },
+    {
+      "id": "M02",
+      "categoria": "Gobernanza",
+      "titulo": "Manual del Sistema",
+      "tipo": "Google Doc",
+      "url": "https://docs.google.com/document/d/114mSUYS5JWejjtyno-DFBz_4A_fTfHlxHa917kpz2io/edit",
+      "descripcion": "Arquitectura documental y protocolo de trabajo."
+    },
+    {
+      "id": "M03",
+      "categoria": "Inventario",
+      "titulo": "Documento maestro Ballesteros",
+      "tipo": "Google Doc",
+      "url": "https://docs.google.com/document/d/1b4oYjL9w0Oii50Z21YU4akXBWpNjLkg0PkhjoKgfdYs/edit",
+      "descripcion": "Inventario y mapa de archivos de la preparación."
+    },
+    {
+      "id": "M04",
+      "categoria": "Problemas",
+      "titulo": "Catálogo de problemas de oposición",
+      "tipo": "Google Doc",
+      "url": "https://docs.google.com/document/d/1EZb3p0oHRWIXil8m41e_odSSi0WHhvH9Btjv_lpBWw8/edit",
+      "descripcion": "Exámenes y colecciones clasificados."
+    },
+    {
+      "id": "M05",
+      "categoria": "Archivo",
+      "titulo": "Recopilación maestra de chats y Works",
+      "tipo": "Google Doc",
+      "url": "https://docs.google.com/document/d/19JE0JJTyHiJjPGRtIwG_ePZuPCUMICj1biiAE57Jq6I/edit",
+      "descripcion": "Recopilación cronológica del proyecto OPOSICIONES."
+    },
+    {
+      "id": "T04-01",
+      "categoria": "T04",
+      "titulo": "Manual operativo de problemas",
+      "tipo": "PDF",
+      "url": "documentos/T04/manual-operativo-problemas-v2.pdf",
+      "descripcion": "61 páginas: teoría operativa, reconocimiento, procedimientos, transferencia y repasos."
+    },
+    {
+      "id": "T04-02",
+      "categoria": "T04",
+      "titulo": "Fichas rápidas",
+      "tipo": "PDF",
+      "url": "documentos/T04/fichas-rapidas-v1.pdf",
+      "descripcion": "15 páginas para recuperación selectiva."
+    },
+    {
+      "id": "T04-03",
+      "categoria": "T04",
+      "titulo": "Matriz teoría-técnicas-problemas",
+      "tipo": "XLSX",
+      "url": "documentos/T04/matriz-teoria-tecnicas-problemas-v1.xlsx",
+      "descripcion": "Seis hojas de trazabilidad."
+    },
+    {
+      "id": "T04-04",
+      "categoria": "T04",
+      "titulo": "Tema de examen modular v4",
+      "tipo": "PDF",
+      "url": "documentos/T04/tema-examen-modular-v4.pdf",
+      "descripcion": "Versión modular de alto rendimiento."
+    },
+    {
+      "id": "T04-05",
+      "categoria": "T04",
+      "titulo": "Tema de examen esencial v5",
+      "tipo": "PDF",
+      "url": "documentos/T04/tema-examen-esencial-v5.pdf",
+      "descripcion": "Versión esencial para escritura cronometrada."
+    }
+  ]
+}

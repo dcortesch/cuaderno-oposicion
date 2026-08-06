@@ -1,0 +1,210 @@
+\documentclass[10pt,a4paper]{article}
+\input{../00_COMPILACION/t04_estilo_v2.tex}
+\begin{document}
+\tituloT{Tema 4. Números enteros. Divisibilidad. Números primos. Congruencia}{T04.02 · Tema de examen modular · versión 4 canónica · núcleo A/B y ampliaciones C}
+
+\begin{idea}[Regla de escritura]
+El texto ordinario constituye la columna vertebral. Los recuadros C pueden omitirse completos sin romper el hilo. La versión se cierra siempre con proyección educativa, conclusión y bibliografía; nunca se sacrifica el núcleo para conservar una ampliación.
+\end{idea}
+
+\section*{Índice estratégico}
+\begin{tabularx}{\textwidth}{C{0.75cm}Y}
+\toprule
+1 & Introducción.\\
+2 & Enteros y división euclídea. Construcción formal de $\Z$ (C).\\
+3 & Divisibilidad, MCD, MCM, Bézout y ecuaciones diofánticas.\\
+4 & Primos y factorización. Infinitud y funciones aritméticas (C).\\
+5 & Congruencias, unidades, cancelación y congruencias lineales.\\
+6 & Euler--Fermat y teorema chino del resto. Wilson (C).\\
+7 & Aplicaciones y proyección educativa. RSA (C).\\
+8 & Conclusión, bibliografía y normativa.\\
+\bottomrule
+\end{tabularx}
+
+\section{Introducción}
+Los números enteros constituyen el primer sistema numérico en el que la resta es una operación interna. En ellos surgen dos preguntas estructurales: cuándo un entero divide a otro y qué información permanece al considerar solamente los restos. De ambas nacen la divisibilidad, la teoría de números primos y las congruencias, que transforman problemas potencialmente ilimitados en problemas sobre factores o clases residuales.
+
+En los libros VII y IX de los \emph{Elementos}, Euclides sistematizó el algoritmo del máximo común divisor y la teoría elemental de los primos. Boyer y Merzbach muestran que estas referencias responden a problemas matemáticos concretos: comparar medidas y descomponer números. Mucho después, Gauss convirtió las congruencias en un cálculo aritmético autónomo.
+
+Partiremos de la estructura de $\Z$ y de la división euclídea; enlazaremos el algoritmo de Euclides con Bézout y las ecuaciones diofánticas; estudiaremos la factorización prima; y culminaremos con el cálculo modular, Euler--Fermat, el teorema chino del resto y sus aplicaciones.
+
+\section{Enteros y división euclídea}
+\begin{ampliacion}[· Construcción formal de $\Z$]
+En $\N^2$ se define $(a,b)\sim(c,d)$ si $a+d=b+c$. La clase $[(a,b)]$ representa la diferencia $a-b$, y el cociente $\N^2/\!\sim$ se identifica con $\Z$. Se definen
+\[
+[(a,b)]+[(c,d)]=[(a+c,b+d)],\qquad
+[(a,b)]\,[(c,d)]=[(ac+bd,ad+bc)].
+\]
+Las operaciones están bien definidas respecto de la equivalencia. Así, $(\Z,+,\cdot)$ es un anillo conmutativo con unidad y dominio de integridad; sus unidades son $\pm1$. El orden es compatible con la suma y con el producto por enteros positivos.
+\end{ampliacion}
+
+En adelante basta recordar que $(\Z,+,\cdot)$ es un dominio de integridad totalmente ordenado y que sus unidades son $\pm1$.
+
+\begin{teorema}[División euclídea]
+Dados $a\in\Z$ y $b\ne0$, existen únicos $q,r\in\Z$ tales que
+\[
+a=bq+r,\qquad 0\le r<|b|.
+\]
+\end{teorema}
+\begin{proof}
+Para $b>0$, el conjunto $S=\{a-bk:k\in\Z,\ a-bk\ge0\}$ es no vacío. Sea $r=a-bq$ su mínimo. Si $r\ge b$, entonces $r-b=a-b(q+1)$ sería un elemento menor de $S$; luego $0\le r<b$. Si hubiera dos expresiones, $b(q-q')=r'-r$ y $|r'-r|<b$, de donde $r=r'$ y $q=q'$. Para $b<0$ se emplea $|b|$.
+\end{proof}
+Por ejemplo, $-47=6(-8)+1$; exigir $0\le r<|b|$ impide tomar el resto $-5$.
+
+\section{Divisibilidad, MCD, MCM y ecuaciones diofánticas}
+Para $a,b\in\Z$, se escribe $a\mid b$ cuando existe $k\in\Z$ con $b=ak$. Si $a\mid b$ y $a\mid c$, entonces $a\mid(ub+vc)$ para cualesquiera $u,v\in\Z$.
+
+Para $a,b$ no ambos nulos, el máximo común divisor positivo $d=\mcd(a,b)$ divide a ambos y todo divisor común divide a $d$. Si $a=bq+r$, los pares $(a,b)$ y $(b,r)$ poseen los mismos divisores comunes, por lo que
+\[
+\mcd(a,b)=\mcd(b,r).
+\]
+La iteración constituye el algoritmo de Euclides y termina porque los restos no negativos decrecen estrictamente.
+
+\begin{teorema}[Identidad de Bézout]
+Si $d=\mcd(a,b)$, existen $u,v\in\Z$ tales que $d=au+bv$.
+\end{teorema}
+\begin{proof}
+El último resto no nulo del algoritmo es $d$. Sustituyendo hacia atrás cada resto en función de los anteriores se obtiene $d=au+bv$. Recíprocamente, todo divisor común de $a$ y $b$ divide cualquier combinación $au+bv$.
+\end{proof}
+Para $252$ y $198$ se obtiene $18=4\cdot252-5\cdot198$.
+
+Si $a=\prod p_i^{\alpha_i}$ y $b=\prod p_i^{\beta_i}$, el MCD toma los exponentes mínimos y el MCM los máximos. Como
+\[
+\min(\alpha_i,\beta_i)+\max(\alpha_i,\beta_i)=\alpha_i+\beta_i,
+\]
+se deduce $\mcd(a,b)\mcm(a,b)=|ab|$ cuando $ab\ne0$.
+
+La ecuación diofántica $ax+by=c$ tiene solución entera si y solo si $d\mid c$. Si $(x_0,y_0)$ es una solución particular, todas son
+\[
+x=x_0+\frac{b}{d}t,\qquad y=y_0-\frac{a}{d}t,\qquad t\in\Z.
+\]
+Hunacek presenta división euclídea, Euclides, Bézout y ecuaciones diofánticas como una única cadena conceptual, no como reglas aisladas.
+
+\section{Números primos y factorización única}
+Un entero $p>1$ es primo si sus únicos divisores positivos son $1$ y $p$; $0$ y $1$ no son primos.
+
+\begin{lema}[Euclides]
+Si $p$ es primo y $p\mid ab$, entonces $p\mid a$ o $p\mid b$.
+\end{lema}
+\begin{proof}
+Si $p\nmid a$, entonces $\mcd(p,a)=1$. Por Bézout existen $u,v$ con $up+va=1$. Multiplicando por $b$, los dos sumandos del miembro izquierdo son divisibles por $p$, luego $p\mid b$.
+\end{proof}
+
+\begin{teorema}[Teorema fundamental de la aritmética]
+Todo entero $n>1$ es producto de primos de forma única, salvo el orden.
+\end{teorema}
+La existencia se prueba por inducción fuerte. Para la unicidad, el lema de Euclides permite identificar y cancelar sucesivamente los factores primos.
+
+\begin{ampliacion}[· Infinitud de los primos]
+Si $p_1,\ldots,p_k$ fueran todos los primos, el número $N=p_1\cdots p_k+1$ no sería divisible por ninguno de ellos; sin embargo, $N>1$ posee un divisor primo, contradicción.
+\end{ampliacion}
+
+\begin{ampliacion}[· Funciones aritméticas]
+Si $n=\prod p_i^{\alpha_i}$, entonces
+\[
+\tau(n)=\prod(\alpha_i+1),\qquad
+\sigma(n)=\prod\frac{p_i^{\alpha_i+1}-1}{p_i-1}.
+\]
+Por ejemplo, $360=2^3\cdot3^2\cdot5$ y $\tau(360)=24$. Apostol desarrolla $\tau$, $\sigma$ y $\varphi$ como funciones multiplicativas.
+\end{ampliacion}
+
+\section{Congruencias, unidades y ecuaciones lineales}
+Para $m\ge2$ se define
+\[
+a\equiv b\pmod m\quad\Longleftrightarrow\quad m\mid(a-b).
+\]
+Es una relación de equivalencia compatible con suma y producto. Sus clases forman el anillo $\Z/m\Z$. Una clase $\overline a$ es invertible exactamente cuando $\mcd(a,m)=1$.
+
+\begin{proposicion}[Caso cuerpo]
+El anillo $\Z/m\Z$ es cuerpo si y solo si $m$ es primo.
+\end{proposicion}
+\begin{proof}
+Si $m$ es primo y $\overline a\ne\overline0$, Bézout proporciona un inverso de $\overline a$. Si $m=rs$ es compuesto, con $1<r,s<m$, entonces $\overline r$ y $\overline s$ son no nulas pero su producto es cero.
+\end{proof}
+
+La cancelación exige controlar las hipótesis. En general,
+\[
+ac\equiv bc\pmod m\quad\Longrightarrow\quad a\equiv b\pmod{m/\mcd(c,m)}.
+\]
+Por ejemplo, $2\cdot1\equiv2\cdot4\pmod6$, aunque $1\not\equiv4\pmod6$.
+
+\begin{teorema}[Congruencia lineal]
+La ecuación $ax\equiv b\pmod m$ tiene solución si y solo si $d=\mcd(a,m)$ divide a $b$; en ese caso posee exactamente $d$ soluciones incongruentes módulo $m$.
+\end{teorema}
+Equivale a la ecuación diofántica $ax-my=b$. Por ejemplo, $14x\equiv8\pmod{20}$ se reduce a $7x\equiv4\pmod{10}$ y produce $x\equiv2,12\pmod{20}$. Ivorra conecta de forma natural Bézout, inversos y congruencias lineales.
+
+\section{Euler--Fermat y teorema chino del resto}
+Sea $\varphi(m)$ el número de clases invertibles módulo $m$.
+
+\begin{teorema}[Euler--Fermat]
+Si $\mcd(a,m)=1$, entonces $a^{\varphi(m)}\equiv1\pmod m$. En particular, si $p$ es primo, $a^p\equiv a\pmod p$.
+\end{teorema}
+Multiplicar por $a$ permuta las clases invertibles; al comparar sus productos y cancelar se obtiene el resultado.
+
+\begin{teorema}[Teorema chino del resto]
+Si $m_1,\ldots,m_r$ son coprimos dos a dos, el sistema $x\equiv a_i\pmod{m_i}$ tiene una única solución módulo $M=m_1\cdots m_r$.
+\end{teorema}
+Con $M_i=M/m_i$ y $u_iM_i\equiv1\pmod{m_i}$, una solución es
+\[
+x_0=\sum_{i=1}^r a_iM_iu_i.
+\]
+La unicidad se sigue porque dos soluciones difieren en un múltiplo de cada $m_i$ y, por coprimalidad, de $M$.
+
+\begin{ampliacion}[· Wilson]
+Un entero $p>1$ es primo si y solo si $(p-1)!\equiv-1\pmod p$. Aporta amplitud, pero no es necesario para la cadena central.
+\end{ampliacion}
+
+\section{Aplicaciones y proyección educativa}
+Si $N=\sum_{k=0}^{s}a_k10^k$, entonces
+\[
+N\equiv\sum_{k=0}^{s}a_k r_k\pmod m,\qquad r_k\equiv10^k\pmod m.
+\]
+Para $m=3$ o $9$, $10^k\equiv1$; para $m=11$, $10^k\equiv(-1)^k$. Las últimas cifras se controlan módulo $10^s$ y los exponentes grandes mediante ciclos o Euler. Bézout resuelve ecuaciones diofánticas y el TCR organiza condiciones simultáneas.
+
+\begin{ampliacion}[· RSA]
+En RSA se eligen primos $p,q$, se toma $n=pq$ y exponentes $e,d$ con $ed\equiv1\pmod{\varphi(n)}$. Euler--Fermat, junto con el TCR, justifica la recuperación del mensaje.
+\end{ampliacion}
+
+Una secuencia de aula de alto rendimiento consiste en explorar sumas alternadas de cifras, formular el criterio de divisibilidad por $11$ y demostrarlo a partir de $10\equiv-1\pmod{11}$. Se pasa de regularidades a conjetura y prueba. Goñi y colaboradores subrayan que el sentido numérico implica elegir, estimar y justificar estrategias; la tecnología puede explorar casos, pero no sustituye la argumentación.
+
+Las órdenes andaluzas de 30 de mayo de 2023 para ESO y Bachillerato sitúan estos contenidos en el sentido numérico y los conectan con resolución de problemas, razonamiento y pensamiento computacional.
+
+\section{Conclusión}
+La división euclídea aporta el principio algorítmico; Bézout caracteriza el MCD mediante combinaciones lineales y resuelve ecuaciones diofánticas; la factorización prima describe la estructura multiplicativa; y las congruencias conservan la información residual compatible con las operaciones. Esta cadena unifica criterios de divisibilidad, sistemas de restos, ciclos de potencias y aplicaciones, y constituye un terreno especialmente fértil para pasar de la experimentación a la prueba.
+
+\clearpage
+\section*{Anexo editorial · referencias y control de módulos}
+\begin{multicols}{2}\small
+\textbf{Bibliografía utilizada}
+\begin{itemize}
+\item Boyer, C. B. y Merzbach, U. C. (1999). \emph{Historia de la matemática}. Alianza.
+\item Hunacek, M. (2023). \emph{Introduction to Number Theory}. CRC.
+\item Ivorra Castillo, C. \emph{Introducción a la teoría algebraica de números}. UV.
+\item Goñi, J. M. et al. (2011). \emph{Matemáticas. Complementos de formación disciplinar}. Graó.
+\item Apostol, T. M. (1984). \emph{Introducción a la teoría analítica de números}. Solo si se conserva la ampliación de funciones aritméticas.
+\end{itemize}
+\columnbreak
+\textbf{Normativa}
+\begin{itemize}
+\item Orden de 30 de mayo de 2023, currículo de ESO en Andalucía.
+\item Orden de 30 de mayo de 2023, currículo de Bachillerato en Andalucía.
+\end{itemize}
+\end{multicols}
+
+\begin{control}[Tabla de decisión antes del ensayo]
+\begin{tabularx}{\textwidth}{L{4.1cm}C{2.3cm}Y}
+\toprule
+\textbf{Módulo C} & \textbf{Ahorro} & \textbf{Regla de supresión}\\\midrule
+Construcción formal de $\Z$ & 4--5 min & Comenzar con la estructura algebraica y división euclídea.\\
+Infinitud de los primos & 3--4 min & Conservar lema de Euclides y TFA.\\
+Funciones $\tau$ y $\sigma$ & 2--3 min & Retirar también la cita de Apostol.\\
+Wilson & 2 min & Suprimir sin referencias posteriores.\\
+RSA & 3--4 min & Conservar divisibilidad por 11 como aplicación.\\
+\bottomrule
+\end{tabularx}
+\end{control}
+
+\begin{idea}[Comprobación de cierre]
+Antes de considerar esta versión canónica debe escribirse a mano. Registrar: tiempo de cada bloque, páginas, hipótesis omitidas, conclusión terminada y margen real de revisión. La paginación tipográfica no predice la extensión manuscrita.
+\end{idea}
+\end{document}

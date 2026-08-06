@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Explorador navegable del sistema de preparación de oposiciones de Matemáticas.">
+  <title>Tema · Cuaderno de Oposición</title>
+  <link rel="stylesheet" href="assets/css/explorer.css">
+  
+</head>
+<body data-page="tema">
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="index.html">
+        <span class="brand-kicker">OPOSICIONES</span>
+        <strong>Cuaderno navegable</strong>
+        <small>Matemáticas · Secundaria</small>
+      </a>
+      <nav class="main-nav" aria-label="Navegación principal">
+        <a data-nav="dashboard" href="index.html">Inicio</a>
+        <a data-nav="explorar" href="explorar.html">Explorar</a>
+        <a data-nav="plan" href="plan.html">Plan de 9 meses</a>
+        <a data-nav="temas" href="temas.html">Temas</a>
+        <a data-nav="problemas" href="problemas.html">Problemas</a>
+        <a data-nav="seguimiento" href="seguimiento.html">Repasos y evidencias</a>
+        <a data-nav="programacion" href="programacion.html">Programación</a>
+        <a data-nav="biblioteca" href="biblioteca.html">Biblioteca</a>
+      </nav>
+      <div class="sidebar-note">
+        <b>Principio del sistema</b>
+        <span>Elaborado no significa dominado. El dominio exige recuperación, tiempo y corrección.</span>
+      </div>
+      <div class="sidebar-meta">Versión explorador 1.0 · 6 ago 2026</div>
+    </aside>
+    <div class="page-column">
+      <header class="topbar">
+        <button class="menu-button" id="menuButton" aria-label="Abrir navegación">☰</button>
+        <div class="topbar-title">Tema</div>
+        <a class="topbar-action" href="explorar.html">Buscar</a>
+      </header>
+      <main class="page-content">
+        
+<section id="themeHeader"></section>
+<nav class="tab-nav" id="themeTabs" aria-label="Secciones del tema">
+  <button class="active" data-tab="resumen">Resumen</button>
+  <button data-tab="examen">Examen</button>
+  <button data-tab="problemas">Problemas</button>
+  <button data-tab="tecnicas">Técnicas</button>
+  <button data-tab="videos">Vídeos</button>
+  <button data-tab="archivos">Archivos</button>
+  <button data-tab="evidencias">Evidencias</button>
+</nav>
+<section id="themeTabContent" class="tab-content"></section>
+
+      </main>
+      <footer class="site-footer">
+        <span>Cuaderno de Oposición · Datos estáticos + progreso local del navegador.</span>
+        <a href="README_EXPLORADOR.md">Documentación</a>
+      </footer>
+    </div>
+  </div>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
