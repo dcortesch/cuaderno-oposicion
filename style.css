@@ -147,3 +147,5 @@ footer a{ text-decoration:underline; text-decoration-color: rgba(138,133,120,0.4
 .topic-footer-nav{ display:flex; justify-content:space-between; padding: 30px 56px 60px; border-top:1px solid var(--line-dark); font-family:'JetBrains Mono', monospace; font-size:0.82rem; }
 .topic-footer-nav a{ text-decoration:none; color: var(--amber-dim); }
 .topic-footer-nav a:hover{ text-decoration:underline; }
+
+
